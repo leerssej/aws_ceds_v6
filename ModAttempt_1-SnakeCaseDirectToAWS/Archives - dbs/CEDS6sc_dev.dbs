@@ -53204,14 +53204,5 @@ Double-click any column, foreign key or table headers to edit.]]></comment>
 		<entity schema="ceds6sc" name="teacher_student_data_link_exclusion" color="1f5182" x="4245" y="2925" />
 		<entity schema="ceds6sc" name="workforce_employment_quarterly_data" color="1f5182" x="4245" y="2925" />
 		<entity schema="ceds6sc" name="workforce_program_participation" color="1f5182" x="4245" y="2925" />
-		<script name="Sql" id="Query_508c8f2" language="SQL" >
-			<string><![CDATA[drop schema ceds6sc cascade;]]></string>
-		</script>
-		<browser id="Browse_7932ef" name="organization_program_type" confirm_updates="y" >
-			<browse_table schema="ceds6sc" entity="organization_program_type" x="10" y="10" width="455" height="350" />
-		</browser>
-		<browser id="Browse_5e158d5" name="organization_program_type_001" confirm_updates="y" >
-			<browse_table schema="ceds6sc" entity="organization_program_type" x="10" y="10" width="455" height="350" />
-		</browser>
 	</layout>
 </project>

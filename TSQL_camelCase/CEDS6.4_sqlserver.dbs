@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<project name="SqlServer_CEDS6.4" id="Project_52770ac" template="Default" database="SqlServer" >
+	<schema name="dbo" catalogname="master" schemaname="dbo" >
+		<table name="Achievement" >
+			<column name="AchievementId" type="int" length="10" decimal="0" jt="4" mandatory="y" autoincrement="y" />
+			<column name="PersonId" type="int" length="10" decimal="0" jt="4" mandatory="y" />
+			<column name="Title" type="nvarchar" length="300" decimal="0" jt="12" />
+			<column name="Description" type="nvarchar" length="300" decimal="0" jt="12" />
+			<column name="Category" type="nvarchar" length="60" decimal="0" jt="12" />
+			<column name="CategorySystem" type="nvarchar" length="50" decimal="0" jt="12" />
+			<column name="ImageUrl" type="nvarchar" length="300" decimal="0" jt="12" />
+			<column name="Criteria" type="nvarchar" length="300" decimal="0" jt="12" />
+			<column name="CriteriaUrl" type="nvarchar" length="300" decimal="0" jt="12" />
+			<column name="CompetencySetId" type="int" length="10" decimal="0" jt="4" />
+			<column name="StartDate" type="date" length="10" decimal="0" jt="91" />
+			<column name="EndDate" type="date" length="10" decimal="0" jt="91" />
+			<column name="AwardIssuerName" type="nvarchar" length="128" decimal="0" jt="12" />
+			<column name="AwardIssuerOriginURL" type="nvarchar" length="300" decimal="0" jt="12" />
+			<index name="PK_Achievement" unique="PRIMARY_KEY" >
+				<column name="AchievementId" />
+			</index>
+		</table>
+		<table name="MSreplication_options" >
+			<column name="optname" type="sysname" length="128" decimal="0" jt="12" mandatory="y" />
+			<column name="value" type="bit" length="1" decimal="0" jt="-7" mandatory="y" />
+			<column name="major_version" type="int" length="10" decimal="0" jt="4" mandatory="y" />
+			<column name="minor_version" type="int" length="10" decimal="0" jt="4" mandatory="y" />
+			<column name="revision" type="int" length="10" decimal="0" jt="4" mandatory="y" />
+			<column name="install_failures" type="int" length="10" decimal="0" jt="4" mandatory="y" />
+		</table>
+		<table name="employees" >
+			<column name="employee_id" type="int" length="10" decimal="0" jt="4" mandatory="y" />
+			<column name="last_name" type="varchar" length="50" decimal="0" jt="12" mandatory="y" />
+			<column name="first_name" type="varchar" length="50" decimal="0" jt="12" />
+			<column name="salary" type="money" length="19" decimal="4" jt="3" />
+		</table>
+		<table name="spt_fallback_db" >
+			<column name="xserver_name" type="varchar" length="30" decimal="0" jt="12" mandatory="y" />
+			<column name="xdttm_ins" type="datetime" length="23" decimal="3" jt="93" mandatory="y" />
+			<column name="xdttm_last_ins_upd" type="datetime" length="23" decimal="3" jt="93" mandatory="y" />
+			<column name="xfallback_dbid" type="smallint" length="5" decimal="0" jt="5" />
+			<column name="name" type="varchar" length="30" decimal="0" jt="12" mandatory="y" />
+			<column name="dbid" type="smallint" length="5" decimal="0" jt="5" mandatory="y" />
+			<column name="status" type="smallint" length="5" decimal="0" jt="5" mandatory="y" />
+			<column name="version" type="smallint" length="5" decimal="0" jt="5" mandatory="y" />
+		</table>
+		<table name="spt_fallback_dev" >
+			<column name="xserver_name" type="varchar" length="30" decimal="0" jt="12" mandatory="y" />
+			<column name="xdttm_ins" type="datetime" length="23" decimal="3" jt="93" mandatory="y" />
+			<column name="xdttm_last_ins_upd" type="datetime" length="23" decimal="3" jt="93" mandatory="y" />
+			<column name="xfallback_low" type="int" length="10" decimal="0" jt="4" />
+			<column name="xfallback_drive" type="char" length="2" decimal="0" jt="1" />
+			<column name="low" type="int" length="10" decimal="0" jt="4" mandatory="y" />
+			<column name="high" type="int" length="10" decimal="0" jt="4" mandatory="y" />
+			<column name="status" type="smallint" length="5" decimal="0" jt="5" mandatory="y" />
+			<column name="name" type="varchar" length="30" decimal="0" jt="12" mandatory="y" />
+			<column name="phyname" type="varchar" length="127" decimal="0" jt="12" mandatory="y" />
+		</table>
+		<table name="spt_fallback_usg" >
+			<column name="xserver_name" type="varchar" length="30" decimal="0" jt="12" mandatory="y" />
+			<column name="xdttm_ins" type="datetime" length="23" decimal="3" jt="93" mandatory="y" />
+			<column name="xdttm_last_ins_upd" type="datetime" length="23" decimal="3" jt="93" mandatory="y" />
+			<column name="xfallback_vstart" type="int" length="10" decimal="0" jt="4" />
+			<column name="dbid" type="smallint" length="5" decimal="0" jt="5" mandatory="y" />
+			<column name="segmap" type="int" length="10" decimal="0" jt="4" mandatory="y" />
+			<column name="lstart" type="int" length="10" decimal="0" jt="4" mandatory="y" />
+			<column name="sizepg" type="int" length="10" decimal="0" jt="4" mandatory="y" />
+			<column name="vstart" type="int" length="10" decimal="0" jt="4" mandatory="y" />
+		</table>
+		<table name="spt_monitor" >
+			<column name="lastrun" type="datetime" length="23" decimal="3" jt="93" mandatory="y" />
+			<column name="cpu_busy" type="int" length="10" decimal="0" jt="4" mandatory="y" />
+			<column name="io_busy" type="int" length="10" decimal="0" jt="4" mandatory="y" />
+			<column name="idle" type="int" length="10" decimal="0" jt="4" mandatory="y" />
+			<column name="pack_received" type="int" length="10" decimal="0" jt="4" mandatory="y" />
+			<column name="pack_sent" type="int" length="10" decimal="0" jt="4" mandatory="y" />
+			<column name="connections" type="int" length="10" decimal="0" jt="4" mandatory="y" />
+			<column name="pack_errors" type="int" length="10" decimal="0" jt="4" mandatory="y" />
+			<column name="total_read" type="int" length="10" decimal="0" jt="4" mandatory="y" />
+			<column name="total_write" type="int" length="10" decimal="0" jt="4" mandatory="y" />
+			<column name="total_errors" type="int" length="10" decimal="0" jt="4" mandatory="y" />
+		</table>
+		<view name="spt_values" >
+			<view_script><![CDATA[
+create view spt_values as
+select name collate database_default as name,
+	number,
+	type collate database_default as type,
+	low, high, status
+from sys.spt_values
+]]></view_script>
+			<column name="name" type="nvarchar" />
+			<column name="number" type="int" />
+			<column name="type" type="nchar" />
+			<column name="low" type="int" />
+			<column name="high" type="int" />
+			<column name="status" type="int" />
+		</view>
+		<procedure name="sp_MScleanupmergepublisher" id="Procedure_46e2a92" isSystem="false" >
+			<string><![CDATA[create procedure dbo.sp_MScleanupmergepublisher
+as
+    exec sys.sp_MScleanupmergepublisher_internal
+]]></string>
+		</procedure>
+		<procedure name="sp_MSrepl_startup" id="Procedure_556c5cb" isSystem="false" >
+			<string><![CDATA[
+create procedure dbo.sp_MSrepl_startup
+as
+    exec sys.sp_MSrepl_startup_internal
+]]></string>
+		</procedure>
+	</schema>
+	<connector name="SqlServer_CEDS6.4" database="SqlServer" driver_class="com.microsoft.sqlserver.jdbc.SQLServerDriver" driver_jar="sqljdbc42.jar" driver_desc="Native Driver" host="localhost" port="1433" instance="master" user="CEDS" passwd="cGFzc3dvcmQx" />
+	<layout name="Default Layout" id="Layout_26c6e7c" show_relation="columns" >
+		<entity schema="dbo" name="Achievement" color="bfd4f5" x="45" y="45" />
+		<entity schema="dbo" name="MSreplication_options" color="bfd4f5" x="255" y="45" />
+		<entity schema="dbo" name="employees" color="bfd4f5" x="255" y="360" />
+		<entity schema="dbo" name="spt_fallback_db" color="bfd4f5" x="45" y="360" />
+		<entity schema="dbo" name="spt_fallback_dev" color="c8f5bf" x="465" y="45" />
+		<entity schema="dbo" name="spt_fallback_usg" color="c8f5bf" x="660" y="45" />
+		<entity schema="dbo" name="spt_monitor" color="c8f5bf" x="660" y="300" />
+		<entity schema="dbo" name="spt_values" color="c8f5bf" x="465" y="300" />
+	</layout>
+	<layout name="Sample Layout with Groups" id="Layout_1a9ba54" show_relation="columns" >
+		<entity schema="dbo" name="Achievement" color="bfd4f5" x="45" y="195" />
+		<entity schema="dbo" name="MSreplication_options" color="bfd4f5" x="255" y="195" />
+		<entity schema="dbo" name="employees" color="bfd4f5" x="255" y="510" />
+		<entity schema="dbo" name="spt_fallback_db" color="bfd4f5" x="45" y="510" />
+		<entity schema="dbo" name="spt_fallback_dev" color="c8f5bf" x="465" y="195" />
+		<entity schema="dbo" name="spt_fallback_usg" color="c8f5bf" x="660" y="195" />
+		<entity schema="dbo" name="spt_monitor" color="c8f5bf" x="660" y="450" />
+		<entity schema="dbo" name="spt_values" color="c8f5bf" x="465" y="450" />
+		<callout x="45" y="75" pointer="NO" >
+			<comment><![CDATA[You may create multiple layouts with the same or different tables.
+Layouts will be saved to project file. 
+Double-click any column, foreign key or table headers to edit.]]></comment>
+		</callout>
+		<group name="Achievement" color="ecf0f7" >
+			<entity schema="dbo" name="Achievement" />
+			<entity schema="dbo" name="MSreplication_options" />
+			<entity schema="dbo" name="employees" />
+			<entity schema="dbo" name="spt_fallback_db" />
+		</group>
+		<group name="spt_fallback_dev" color="eef7ec" >
+			<entity schema="dbo" name="spt_fallback_dev" />
+			<entity schema="dbo" name="spt_fallback_usg" />
+			<entity schema="dbo" name="spt_monitor" />
+			<entity schema="dbo" name="spt_values" />
+		</group>
+	</layout>
+	<layout name="Sample Layout with Relational Data Browse" id="Layout_2e4e90f" show_relation="columns" >
+		<entity schema="dbo" name="Achievement" color="bfd4f5" x="45" y="165" />
+		<entity schema="dbo" name="MSreplication_options" color="bfd4f5" x="255" y="165" />
+		<entity schema="dbo" name="employees" color="bfd4f5" x="255" y="480" />
+		<entity schema="dbo" name="spt_fallback_db" color="bfd4f5" x="45" y="480" />
+		<entity schema="dbo" name="spt_fallback_dev" color="c8f5bf" x="465" y="165" />
+		<entity schema="dbo" name="spt_fallback_usg" color="c8f5bf" x="660" y="165" />
+		<entity schema="dbo" name="spt_monitor" color="c8f5bf" x="660" y="420" />
+		<entity schema="dbo" name="spt_values" color="c8f5bf" x="465" y="420" />
+		<callout x="45" y="45" pointer="NO" >
+			<comment><![CDATA[Use the Relational Data Browse for exploring data from multiple tables at a time.
+Tables should be bind by foreign keys - if they are not you can create VIRTUAL foreign keys in the layout. 
+Virtual foreign keys will be saved to project file.
+ 
+Descend into children tables by pressing the foreign key arrow icon near title.
+Right-click column headers in browse tables to set filters.]]></comment>
+		</callout>
+		<browser id="Browse_15933e6" name="Sample Relational Data Browse" confirm_updates="y" >
+			<browse_table schema="dbo" entity="Achievement" x="10" y="10" width="400" height="300" />
+		</browser>
+	</layout>
+</project>
