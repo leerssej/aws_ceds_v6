@@ -36,6 +36,8 @@ cu_ceds6_tsql_sc %<>% gsub("Title_I(II)*",  "Title_I\\1_", ., perl = T)
 cu_ceds6_tsql_sc %<>% gsub("Pre_*K(indergarten)*",  "Pre_K\\1_", ., perl = T, ignore.case = T)
 cu_ceds6_tsql_sc %<>% gsub("Title_*1",  "Title_1_", ., perl = T, ignore.case = T)
 cu_ceds6_tsql_sc %<>% gsub("API_*Type",  "API_Type", ., perl = T, ignore.case = T)
+cu_ceds6_tsql_sc %<>% gsub("CENSUSID",  "CENSUS_ID", ., perl = T, ignore.case = T)
+cu_ceds6_tsql_sc %<>% gsub("USCitizenship",  "US_Citizenship", ., perl = T, ignore.case = T)
 
 # can't for the life of me figure out how to get rid of the newlines littering the EXEC spots.
 # cu_ceds6_tsql_sc %<>% gsub("\\s*\\.\\s*(\n|\r)'",  ".'", ., perl = T, ignore.case = T)
@@ -64,7 +66,6 @@ cu_ceds6_tsql_sc %<>% sc(., "ISO6392")
 cu_ceds6_tsql_sc %<>% sc(., "ISO6393")
 cu_ceds6_tsql_sc %<>% sc(., "ISO6395")
 cu_ceds6_tsql_sc %<>% sc(., "PS")
-cu_ceds6_tsql_sc %<>% sc(., "US")
 cu_ceds6_tsql_sc %<>% sc(., "CTE")
 cu_ceds6_tsql_sc %<>% sc(., "AE")
 cu_ceds6_tsql_sc %<>% sc(., "APIP")
@@ -86,3 +87,14 @@ cu_ceds6_tsql_sc %<>% sc(., "WF")
 fileConn <- file("tsql_ceds6_snake_case/tsql_ceds6sc_create_update.sql")
 writeLines(cu_ceds6_tsql_sc, fileConn)
 close(fileConn)
+
+write_lines(cu_ceds6_tsql_sc, "tsql_ceds6_snake_case/tsql_ceds6sc_create_update.sql")
+
+###### 4. Slice Up Script into DbSchema executable size ######
+clippablefile_path <- "tsql_ceds6_snake_case/tsql_ceds6sc_create_update_clippable.sql"
+firstblock <- read_lines_raw(clippablefile_path, n_max = 9000)
+secondblock <- read_lines(clippablefile_path, skip = 9000, n_max = 9000)
+
+###### 5. Write Out the Sliced Files ######
+write_lines(firstblock, "tsql_ceds6_snake_case/tsql_ceds6sc_create_update_pt1.sql")
+write_lines(secondblock, "tsql_ceds6_snake_case/tsql_ceds6sc_create_update_pt2.sql")
