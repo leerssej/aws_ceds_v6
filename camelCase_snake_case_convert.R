@@ -34,10 +34,12 @@ cu_ceds6_tsql_sc %<>% gsub("Rating_([ABC])Id",  "Rating_\\1_Id", ., perl = T)
 # complicated Issues
 cu_ceds6_tsql_sc %<>% gsub("Title_I(II)*",  "Title_I\\1_", ., perl = T)
 cu_ceds6_tsql_sc %<>% gsub("Pre_*K(indergarten)*",  "Pre_K\\1_", ., perl = T, ignore.case = T)
+cu_ceds6_tsql_sc %<>% gsub("Title_*1",  "Title_1_", ., perl = T, ignore.case = T)
+cu_ceds6_tsql_sc %<>% gsub("API_*Type",  "API_Type", ., perl = T, ignore.case = T)
 
 # Abbreviation Issues
 sc <- function(dat, ABBR) {
-   gsub(paste0("(_|\\[)", ABBR, "([A-Z])"),  paste0("\\1", ABBR, "_\\2"), dat, perl = T)
+   gsub(paste0("('|_|\\[)", ABBR, "([A-Z])"),  paste0("\\1", ABBR, "_\\2"), dat, perl = T)
 }
 cu_ceds6_tsql_sc %<>% sc(., "EL")
 cu_ceds6_tsql_sc %<>% sc(., "K12")
@@ -51,6 +53,24 @@ cu_ceds6_tsql_sc %<>% sc(., "COS")
 cu_ceds6_tsql_sc %<>% sc(., "XPK")
 cu_ceds6_tsql_sc %<>% sc(., "SCED")
 cu_ceds6_tsql_sc %<>% sc(., "LEA")
+cu_ceds6_tsql_sc %<>% sc(., "Part_C")
+cu_ceds6_tsql_sc %<>% sc(., "Part_B")
+cu_ceds6_tsql_sc %<>% sc(., "ISO6392")
+cu_ceds6_tsql_sc %<>% sc(., "ISO6393")
+cu_ceds6_tsql_sc %<>% sc(., "ISO6395")
+cu_ceds6_tsql_sc %<>% sc(., "PS")
+cu_ceds6_tsql_sc %<>% sc(., "US")
+cu_ceds6_tsql_sc %<>% sc(., "CTE")
+cu_ceds6_tsql_sc %<>% sc(., "AE")
+cu_ceds6_tsql_sc %<>% sc(., "APIP")
+cu_ceds6_tsql_sc %<>% sc(., "IRT")
+cu_ceds6_tsql_sc %<>% sc(., "SEA")
+cu_ceds6_tsql_sc %<>% sc(., "ANSI")
+cu_ceds6_tsql_sc %<>% sc(., "LR")
+cu_ceds6_tsql_sc %<>% sc(., "LS")
+cu_ceds6_tsql_sc %<>% sc(., "ERS")
+cu_ceds6_tsql_sc %<>% sc(., "MEP")
+cu_ceds6_tsql_sc %<>% sc(., "PD")
 
 
 ###### 3. Write Out into Snake_Case directory ######
