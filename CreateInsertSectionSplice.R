@@ -29,3 +29,5 @@ completeCreateInsert <- c(create_pt1, create_pt2, create_pt3, insert_pt1, insert
 fileConn <- file("TSQL_camelCase/TSQL_camelCase_completeDebuggedCreateInsert.sql")
 writeLines(completeCreateInsert, fileConn)
 close(fileConn)
+
+
