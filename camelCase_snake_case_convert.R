@@ -37,6 +37,11 @@ cu_ceds6_tsql_sc %<>% gsub("Pre_*K(indergarten)*",  "Pre_K\\1_", ., perl = T, ig
 cu_ceds6_tsql_sc %<>% gsub("Title_*1",  "Title_1_", ., perl = T, ignore.case = T)
 cu_ceds6_tsql_sc %<>% gsub("API_*Type",  "API_Type", ., perl = T, ignore.case = T)
 
+# can't for the life of me figure out how to get rid of the newlines littering the EXEC spots.
+# cu_ceds6_tsql_sc %<>% gsub("\\s*\\.\\s*(\n|\r)'",  ".'", ., perl = T, ignore.case = T)
+# gsub("\\s*\\.\\s*(\n|\r)'", "Inst., @Last", ". 
+# ' , @l", ignore.case = T)
+
 # Abbreviation Issues
 sc <- function(dat, ABBR) {
    gsub(paste0("('|_|\\[)", ABBR, "([A-Z])"),  paste0("\\1", ABBR, "_\\2"), dat, perl = T)
@@ -71,7 +76,10 @@ cu_ceds6_tsql_sc %<>% sc(., "LS")
 cu_ceds6_tsql_sc %<>% sc(., "ERS")
 cu_ceds6_tsql_sc %<>% sc(., "MEP")
 cu_ceds6_tsql_sc %<>% sc(., "PD")
-
+cu_ceds6_tsql_sc %<>% sc(., "QRIS")
+cu_ceds6_tsql_sc %<>% sc(., "REAP")
+cu_ceds6_tsql_sc %<>% sc(., "RLIS")
+cu_ceds6_tsql_sc %<>% sc(., "WF")
 
 ###### 3. Write Out into Snake_Case directory ######
 # dir.create("tsql_ceds6_snake_case")
