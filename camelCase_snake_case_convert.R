@@ -93,13 +93,19 @@ write_lines(cu_ceds6_tsql_sc, "tsql_ceds6_snake_case/tsql_ceds6sc_create_update.
 
 ###### 4. Slice Up Script into DbSchema executable size ######
 clippablefile_path <- "tsql_ceds6_snake_case/tsql_ceds6sc_create_update.sql"
-firstblock <- read_lines(clippablefile_path, n_max = 8900)
-secondblock <- read_lines(clippablefile_path, skip = 8990, n_max = 9000)
-thirdblock <- read_lines(clippablefile_path, skip = 17990, n_max = 8893)
+block_1 <- read_lines(clippablefile_path, n_max = 8900)
+block_2 <- read_lines(clippablefile_path, skip = 8990, n_max = 9000)
+block_3 <- read_lines(clippablefile_path, skip = 17990, n_max = 8893)
+block_4 <- read_lines(clippablefile_path, skip = 26884, n_max = 9955)
+block_5 <- read_lines(clippablefile_path, skip = 36839, n_max = 9988)
+block_6 <- read_lines(clippablefile_path, skip = 45443, n_max = 9988)
 
 ###### 5. Write Out the Full and the Sliced Files ######
 # in DbSchema bite sized blocks
-write_lines(firstblock, "tsql_ceds6_snake_case/tsql_ceds6sc_create_update_pt1.sql")
-write_lines(secondblock, "tsql_ceds6_snake_case/tsql_ceds6sc_create_update_pt2.sql")
-write_lines(thirdblock, "tsql_ceds6_snake_case/tsql_ceds6sc_create_update_pt3.sql")
+write_lines(block_1, "tsql_ceds6_snake_case/tsql_ceds6sc_create_update_pt1.sql")
+write_lines(block_2, "tsql_ceds6_snake_case/tsql_ceds6sc_create_update_pt2.sql")
+write_lines(block_3, "tsql_ceds6_snake_case/tsql_ceds6sc_create_update_pt3.sql")
+write_lines(block_4, "tsql_ceds6_snake_case/tsql_ceds6sc_create_update_pt4.sql")
+write_lines(block_5, "tsql_ceds6_snake_case/tsql_ceds6sc_create_update_pt5.sql")
+write_lines(block_6, "tsql_ceds6_snake_case/tsql_ceds6sc_create_update_pt6.sql")
 
