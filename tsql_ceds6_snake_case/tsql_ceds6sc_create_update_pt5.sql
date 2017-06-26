@@ -6556,7 +6556,6 @@ INSERT INTO dbo.[Ref_ISO6393_Language]([Code], [Description], [Definition], [Sor
 VALUES ('zza', 'Zaza', NULL, 701.70)
 INSERT INTO dbo.[Ref_ISO6393_Language]([Code], [Description], [Definition], [Sort_Order])
 VALUES ('zzj', 'Zuojiang Zhuang', NULL, 701.80)
-END;
 
 PRINT N'Populate Ref_ISO6395_Language_Family table';
 IF EXISTS(SELECT * FROM dbo.sysobjects WHERE id = object_id(N'[dbo].[Ref_ISO6395_Language_Family]') and OBJECTPROPERTY(id, N'Is_User_Table') = 1)

@@ -16,7 +16,7 @@
 
 USE [master];
 /****** Object:  Database [CEDS_TSQL_v6sc]  ******/
-CREATE DATABASE [CEDS_TSQL_v6sc];
+--CREATE DATABASE [CEDS_TSQL_v6sc];
 ALTER DATABASE [CEDS_TSQL_v6sc] SET COMPATIBILITY_LEVEL = 100;
 
 IF (1 = FULLTEXTSERVICEPROPERTY('Is_Full_Text_Installed'))
@@ -8898,3 +8898,93 @@ SET QUOTED_IDENTIFIER ON;
 CREATE TABLE [dbo].[Ref_Language](
 	[Ref_Language_Id] [int] IDENTITY(1,1) NOT NULL,
 	[Description] [nvarchar](100) NOT NULL,
+	[Code] [nvarchar](50) NULL,
+	[Definition] [nvarchar](max) NULL,
+	[Ref_Jurisdiction_Id] [int] NULL,
+	[Sort_Order] [decimal](5, 2) NULL,
+ CONSTRAINT [PK_Language] PRIMARY KEY CLUSTERED 
+(
+	[Ref_Language_Id] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
+;
+/****** Object:  Table [dbo].[Ref_Language_Use_Type]  ******/
+SET ANSI_NULLS ON;
+SET QUOTED_IDENTIFIER ON;
+CREATE TABLE [dbo].[Ref_Language_Use_Type](
+	[Ref_Language_Use_Type_Id] [int] IDENTITY(1,1) NOT NULL,
+	[Description] [nvarchar](100) NOT NULL,
+	[Code] [nvarchar](50) NULL,
+	[Definition] [nvarchar](4000) NULL,
+	[Ref_Jurisdiction_Id] [int] NULL,
+	[Sort_Order] [decimal](5, 2) NULL,
+ CONSTRAINT [PK_Language_Use_Type] PRIMARY KEY CLUSTERED 
+(
+	[Ref_Language_Use_Type_Id] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+;
+/****** Object:  Table [dbo].[Ref_Lea_Funds_Transfer_Type]  ******/
+SET ANSI_NULLS ON;
+SET QUOTED_IDENTIFIER ON;
+CREATE TABLE [dbo].[Ref_Lea_Funds_Transfer_Type](
+	[Ref_Lea_Funds_Transfer_Type_Id] [int] IDENTITY(1,1) NOT NULL,
+	[Description] [nvarchar](100) NOT NULL,
+	[Code] [nvarchar](50) NULL,
+	[Definition] [nvarchar](4000) NULL,
+	[Ref_Jurisdiction_Id] [int] NULL,
+	[Sort_Order] [decimal](5, 2) NULL,
+ CONSTRAINT [PK_Ref_LEA_Funds_Transfer_Type] PRIMARY KEY CLUSTERED 
+(
+	[Ref_Lea_Funds_Transfer_Type_Id] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+;
+/****** Object:  Table [dbo].[Ref_Lea_Improvement_Status]  ******/
+SET ANSI_NULLS ON;
+SET QUOTED_IDENTIFIER ON;
+CREATE TABLE [dbo].[Ref_Lea_Improvement_Status](
+	[Ref_Lea_Improvement_Status_Id] [int] IDENTITY(1,1) NOT NULL,
+	[Description] [nvarchar](100) NOT NULL,
+	[Code] [nvarchar](50) NULL,
+	[Definition] [nvarchar](4000) NULL,
+	[Ref_Jurisdiction_Id] [int] NULL,
+	[Sort_Order] [decimal](5, 2) NULL,
+ CONSTRAINT [PK_Ref_Lea_Improvement_Status] PRIMARY KEY CLUSTERED 
+(
+	[Ref_Lea_Improvement_Status_Id] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+;
+/****** Object:  Table [dbo].[Ref_Learner_Action_Type]  ******/
+SET ANSI_NULLS ON;
+SET QUOTED_IDENTIFIER ON;
+CREATE TABLE [dbo].[Ref_Learner_Action_Type](
+	[Ref_Learner_Action_Type_Id] [int] IDENTITY(1,1) NOT NULL,
+	[Description] [nvarchar](150) NOT NULL,
+	[Code] [nvarchar](50) NULL,
+	[Definition] [nvarchar](4000) NULL,
+	[Ref_Jurisdiction_Id] [int] NULL,
+	[Sort_Order] [decimal](5, 2) NULL,
+ CONSTRAINT [PK__Ref_Learner_Action_Type] PRIMARY KEY CLUSTERED 
+(
+	[Ref_Learner_Action_Type_Id] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+;
+/****** Object:  Table [dbo].[Ref_Learner_Activity_Maximum_Time_Allowed_Units]  ******/
+SET ANSI_NULLS ON;
+SET QUOTED_IDENTIFIER ON;
+CREATE TABLE [dbo].[Ref_Learner_Activity_Maximum_Time_Allowed_Units](
+	[Ref_Learner_Activity_Maximum_Time_Allowed_Units_Id] [int] IDENTITY(1,1) NOT NULL,
+	[Description] [nvarchar](100) NOT NULL,
+	[Code] [nvarchar](50) NULL,
+	[Definition] [nvarchar](4000) NULL,
+	[Ref_Jurisdiction_Id] [int] NULL,
+	[Sort_Order] [decimal](5, 2) NULL,
+ CONSTRAINT [PK_Ref_Learner_Activity_Maximum_Time_Allowed_Units] PRIMARY KEY CLUSTERED 
+(
+	[Ref_Learner_Activity_Maximum_Time_Allowed_Units_Id] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+;

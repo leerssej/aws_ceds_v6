@@ -93,7 +93,7 @@ write_lines(cu_ceds6_tsql_sc, "tsql_ceds6_snake_case/tsql_ceds6sc_create_update.
 
 ###### 4. Slice Up Script into DbSchema executable size ######
 clippablefile_path <- "tsql_ceds6_snake_case/tsql_ceds6sc_create_update.sql"
-block_1 <- read_lines(clippablefile_path, n_max = 8900)
+block_1 <- read_lines(clippablefile_path, n_max = 8990)
 block_2 <- read_lines(clippablefile_path, skip = 8990, n_max = 9000)
 block_3 <- read_lines(clippablefile_path, skip = 17990, n_max = 8893)
 block_4 <- read_lines(clippablefile_path, skip = 26884, n_max = 9955)
