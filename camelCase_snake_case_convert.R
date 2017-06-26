@@ -87,10 +87,6 @@ cu_ceds6_tsql_sc %<>% sc(., "WF")
 # the full monty
 write_lines(cu_ceds6_tsql_sc, "tsql_ceds6_snake_case/tsql_ceds6sc_create_update.sql")
 
-# fileConn <- file("tsql_ceds6_snake_case/tsql_ceds6sc_create_update.sql")
-# writeLines(cu_ceds6_tsql_sc, fileConn)
-# close(fileConn)
-
 ###### 4. Slice Up Script into DbSchema executable size ######
 clippablefile_path <- "tsql_ceds6_snake_case/tsql_ceds6sc_create_update.sql"
 block_1 <- read_lines(clippablefile_path, n_max = 8990)
@@ -100,7 +96,7 @@ block_4 <- read_lines(clippablefile_path, skip = 26884, n_max = 9955)
 block_5 <- read_lines(clippablefile_path, skip = 36839, n_max = 9988)
 block_6 <- read_lines(clippablefile_path, skip = 45443, n_max = 9988)
 
-###### 5. Write Out the Full and the Sliced Files ######
+###### 5. Write Out the Sliced Files ######
 # in DbSchema bite sized blocks
 write_lines(block_1, "tsql_ceds6_snake_case/tsql_ceds6sc_create_update_pt1.sql")
 write_lines(block_2, "tsql_ceds6_snake_case/tsql_ceds6sc_create_update_pt2.sql")
