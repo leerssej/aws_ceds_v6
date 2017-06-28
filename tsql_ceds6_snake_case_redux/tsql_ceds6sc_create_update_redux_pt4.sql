@@ -9953,3 +9953,4 @@ INSERT INTO dbo.[Ref_ISO6393_Language]([Code], [Description], [Definition], [Sor
 VALUES ('mjj', 'Mawak', NULL, 373.80)
 INSERT INTO dbo.[Ref_ISO6393_Language]([Code], [Description], [Definition], [Sort_Order])
 VALUES ('mjk', 'Matukar', NULL, 373.90)
+END;

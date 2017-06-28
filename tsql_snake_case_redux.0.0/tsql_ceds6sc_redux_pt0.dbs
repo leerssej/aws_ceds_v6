@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<project name="SqlServer" id="Project_303c220" template="Default" database="SqlServer" >
-	<schema name="dbo" catalogname="CEDS_TSQL_v6sc_redux" schemaname="dbo" />
-	<connector name="SqlServer" database="SqlServer" driver_class="com.microsoft.sqlserver.jdbc.SQLServerDriver" driver_jar="sqljdbc42.jar" driver_desc="Native Driver" host="localhost" port="1433" instance="CEDS_TSQL_v6sc" user="CEDS" passwd="cGFzc3dvcmQx" />
-	<layout name="Default Layout" id="Layout_33b74f8" show_relation="columns" />
-</project>

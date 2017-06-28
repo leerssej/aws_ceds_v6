@@ -1,3 +1,6 @@
+PRINT N'Populate Ref_ISO6393_Language table second half';
+IF EXISTS(SELECT * FROM dbo.sysobjects WHERE id = object_id(N'[dbo].[Ref_ISO6393_Language]') and OBJECTPROPERTY(id, N'IsUserTable') = 1)
+BEGIN
 INSERT INTO dbo.[Ref_ISO6393_Language]([Code], [Description], [Definition], [Sort_Order])
 VALUES ('mjl', 'Mandeali', NULL, 374.00)
 INSERT INTO dbo.[Ref_ISO6393_Language]([Code], [Description], [Definition], [Sort_Order])
