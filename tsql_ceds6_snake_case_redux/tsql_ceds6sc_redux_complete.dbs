@@ -24220,5 +24220,53 @@
 		<entity schema="dbo" name="Teacher_Student_Data_Link_Exclusion" color="c8f5bf" x="9750" y="2100" />
 		<entity schema="dbo" name="Workforce_Employment_Quarterly_Data" color="bfbff5" x="1725" y="3015" />
 		<entity schema="dbo" name="Workforce_Program_Participation" color="bfd4f5" x="2970" y="1440" />
+		<script name="Sql" id="Query_345ce77" language="SQL" >
+			<string><![CDATA[PRINT N'Populate Ref_Organization_Identifier_Type table';
+IF EXISTS(SELECT * FROM dbo.sysobjects WHERE id = object_id(N'[dbo].[Ref_Organization_Identifier_Type]') and OBJECTPROPERTY(id, N'IsUserTable') = 1)
+BEGIN
+INSERT INTO dbo.[Ref_Organization_Identifier_Type]([Code], [Description])
+VALUES ('000006', 'Activity Identifier')
+INSERT INTO dbo.[Ref_Organization_Identifier_Type]([Code], [Description])
+VALUES ('000055', 'Course Identifier')
+INSERT INTO dbo.[Ref_Organization_Identifier_Type]([Code], [Description])
+VALUES ('000056', 'Course Code System')
+INSERT INTO dbo.[Ref_Organization_Identifier_Type]([Code], [Description])
+VALUES ('000111', 'Federal School Code')
+INSERT INTO dbo.[Ref_Organization_Identifier_Type]([Code], [Description])
+VALUES ('000166', 'Institution IPEDS Unit_ID')
+INSERT INTO dbo.[Ref_Organization_Identifier_Type]([Code], [Description])
+VALUES ('000175', 'Local Education Agency Supervisory Union Identification Number')
+INSERT INTO dbo.[Ref_Organization_Identifier_Type]([Code], [Description])
+VALUES ('000203', 'Office of Postsecondary Education Identifier')
+INSERT INTO dbo.[Ref_Organization_Identifier_Type]([Code], [Description])
+VALUES ('000625', 'Program Identifier')
+INSERT INTO dbo.[Ref_Organization_Identifier_Type]([Code], [Description])
+VALUES ('000781', 'Adult Education Service Provider Identification System')
+INSERT INTO dbo.[Ref_Organization_Identifier_Type]([Code], [Description])
+VALUES ('000827', 'Organization Identification System')
+INSERT INTO dbo.[Ref_Organization_Identifier_Type]([Code], [Description])
+VALUES ('000978', 'Course Section Identifier')
+INSERT INTO dbo.[Ref_Organization_Identifier_Type]([Code], [Description])
+VALUES ('001072', 'Local Education Agency Identification System')
+INSERT INTO dbo.[Ref_Organization_Identifier_Type]([Code], [Description])
+VALUES ('001073', 'School Identification System')
+INSERT INTO dbo.[Ref_Organization_Identifier_Type]([Code], [Description])
+VALUES ('001078', 'Adult Education Provider Type')
+INSERT INTO dbo.[Ref_Organization_Identifier_Type]([Code], [Description])
+VALUES ('001156', 'Organization Type')
+INSERT INTO dbo.[Ref_Organization_Identifier_Type]([Code], [Description])
+VALUES ('001280', 'Agency Course Identifier')
+INSERT INTO dbo.[Ref_Organization_Identifier_Type]([Code], [Description])
+VALUES ('001315', 'Course Section Number')
+INSERT INTO dbo.[Ref_Organization_Identifier_Type]([Code], [Description])
+VALUES ('001491', 'State Agency Identification System')
+END;]]></string>
+		</script>
+		<browser id="Browse_321e8f5" name="Ref_Organization_Identifier_Type" confirm_updates="y" >
+			<browse_table schema="dbo" entity="Ref_Organization_Identifier_Type" x="10" y="10" width="455" height="350" />
+		</browser>
+		<browser id="Browse_15a0799" name="Ref_Person_Identifier_Type" confirm_updates="y" >
+			<browse_table schema="dbo" entity="Ref_Person_Identifier_Type" x="10" y="10" width="455" height="350" />
+		</browser>
 	</layout>
 </project>
