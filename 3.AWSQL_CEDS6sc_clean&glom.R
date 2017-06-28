@@ -76,6 +76,7 @@ ceds6sc %<>% gsub("Post-master's certificate",  "Post-master''s certificate", .,
 ceds6sc %<>% gsub("'Mi'kmaq; Micmac'",  "'Mikmaq; Micmac'", ., perl = T, ignore.case = T)
 ceds6sc %<>% gsub("St. Mary's",  "St. Mary''s", ., perl = T, ignore.case = T)
 ceds6sc %<>% gsub("Port Gamble S'Klallam Tribe",  "Port Gamble S''Klallam Tribe", ., perl = T, ignore.case = T)
+ceds6sc %<>% gsub("(?<=\\w )'snap'(?= \\w)",  "''snap''", ., perl = T, ignore.case = T)
 
 
 # ceds6sc %<>% gsub("Ta'oih",  "Ta oih", ., perl = T, ignore.case = T)
