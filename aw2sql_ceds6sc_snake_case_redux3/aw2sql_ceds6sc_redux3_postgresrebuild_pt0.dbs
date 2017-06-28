@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<project name="CEDS6sc_AW2SQL_rebuild3.0" id="Project_38bb000" template="Default" database="PostgreSQL" >
+	<schema name="public" catalogname="ceds6sc_aw2sql_rdx" schemaname="public" />
+	<connector name="CEDS6sc_AW2SQL_rebuild3.0" database="PostgreSQL" driver_class="org.postgresql.Driver" driver_jar="postgresql-42.0.0.jre6.jar" driver_desc="Standard" host="localhost" port="5432" instance="ceds6sc_aw2sql_rdx" user="postgres" passwd="QWYyMzRyZXc=" />
+	<layout name="Default Layout" id="Layout_129b938" show_relation="columns" />
+</project>

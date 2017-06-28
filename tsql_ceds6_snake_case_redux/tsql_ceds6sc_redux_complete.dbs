@@ -24262,11 +24262,5 @@ INSERT INTO dbo.[Ref_Organization_Identifier_Type]([Code], [Description])
 VALUES ('001491', 'State Agency Identification System')
 END;]]></string>
 		</script>
-		<browser id="Browse_321e8f5" name="Ref_Organization_Identifier_Type" confirm_updates="y" >
-			<browse_table schema="dbo" entity="Ref_Organization_Identifier_Type" x="10" y="10" width="455" height="350" />
-		</browser>
-		<browser id="Browse_15a0799" name="Ref_Person_Identifier_Type" confirm_updates="y" >
-			<browse_table schema="dbo" entity="Ref_Person_Identifier_Type" x="10" y="10" width="455" height="350" />
-		</browser>
 	</layout>
 </project>
