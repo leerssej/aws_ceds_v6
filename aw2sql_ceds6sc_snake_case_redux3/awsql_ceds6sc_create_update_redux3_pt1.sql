@@ -226,7 +226,7 @@ COMMENT ON COLUMN ceds6sc_rdx.assessment_need_screen_enhancement.assessment_pers
 
 COMMENT ON COLUMN ceds6sc_rdx.assessment_need_screen_enhancement.invert_color_choice IS 'Defines as part of an Assessment Personal Needs Profile the Access for All (Af_A) preference to invert the foreground and background Colors. [CEDS Element: Assessment Need Invert Color Choice, ID:001030]';
 
-COMMENT ON COLUMN ceds6sc_rdx.assessment_need_screen_enhancement.magnification IS 'Defines as part of an Assessment Personal Needs Profile the preferred magnification of the screen as a factor of a screenâ€™s original size. [CEDS Element: Assessment Need Magnification, ID:001031]';
+COMMENT ON COLUMN ceds6sc_rdx.assessment_need_screen_enhancement.magnification IS 'Defines as part of an Assessment Personal Needs Profile the preferred magnification of the screen as a factor of a screen’s original size. [CEDS Element: Assessment Need Magnification, ID:001031]';
 
 COMMENT ON COLUMN ceds6sc_rdx.assessment_need_screen_enhancement.assessment_personal_needs_profile_screen_enhancement_id IS 'Foreign key - Assessment_Personal_Needs_Profile_Screen_Enhancement';
 
@@ -627,7 +627,7 @@ COMMENT ON COLUMN ceds6sc_rdx.assessment_item.difficulty IS 'The percentage of s
 
 COMMENT ON COLUMN ceds6sc_rdx.assessment_item.ref_text_complexity_system_id IS 'The scaling system used to specify the text complexity of an assessment item. [CEDS Element: Assessment Item Text Complexity System, ID:000907]';
 
-COMMENT ON COLUMN ceds6sc_rdx.assessment_item.text_complexity_value IS 'The complexity of the text using the scaling system defined by Text Complexity System, e.g. Lexileâ„¢ for assessment items with a reading passage. [CEDS Element: Assessment Item Text Complexity Value, ID:000906]';
+COMMENT ON COLUMN ceds6sc_rdx.assessment_item.text_complexity_value IS 'The complexity of the text using the scaling system defined by Text Complexity System, e.g. Lexile™ for assessment items with a reading passage. [CEDS Element: Assessment Item Text Complexity Value, ID:000906]';
 
 COMMENT ON COLUMN ceds6sc_rdx.assessment_item.linking_item_indicator IS 'Indicates that the item is intended to be administered in two different grades for the goal of establishing cross grade comparison. [CEDS Element: Assessment Item Linking Item Indicator, ID:001261]';
 
@@ -741,7 +741,7 @@ COMMENT ON COLUMN ceds6sc_rdx.assessment_item_response_theory.parameter_d5 IS 'F
 
 COMMENT ON COLUMN ceds6sc_rdx.assessment_item_response_theory.parameter_d6 IS 'For   polytomous assessment items with more than six possible responses, this is the item response theory value representing the threshold between the sixth and seventh item characteristic functions. [CEDS Element: Assessment Item Response Theory Parameter D6, ID:001260]';
 
-COMMENT ON COLUMN ceds6sc_rdx.assessment_item_response_theory.point_biserial_correlation_value IS 'The correlation between correct answers on this item and total correct answers on the test during a previous administration.Â  [CEDS Element: Assessment Item Response Theory Point Biserial Correlation Value, ID:001262]';
+COMMENT ON COLUMN ceds6sc_rdx.assessment_item_response_theory.point_biserial_correlation_value IS 'The correlation between correct answers on this item and total correct answers on the test during a previous administration.  [CEDS Element: Assessment Item Response Theory Point Biserial Correlation Value, ID:001262]';
 
 COMMENT ON COLUMN ceds6sc_rdx.assessment_item_response_theory.dif_value IS 'A value representing the Differential Item Functioning, also referred to as  measurement bias, for the assessment item.  The value represents differences in the functioning of the item across groups which are matched on the attribute being measure by the item.  The value is calculated using Mantel-Haenszel approach or a comparable algorithm so that a value of 1.0 represents no bias. [CEDS Element: Assessment Item Response Theory DIF Value, ID:001264]';
 
@@ -1206,7 +1206,7 @@ COMMENT ON COLUMN ceds6sc_rdx.cte_course.ref_credit_type_earned_id IS 'The type 
 
 COMMENT ON COLUMN ceds6sc_rdx.cte_course.high_school_course_requirement IS 'An indication that this course credit is required for a high school diploma. [CEDS Element: High School Course Requirement, ID:000137]';
 
-COMMENT ON COLUMN ceds6sc_rdx.cte_course.ref_course_gpa_applicability_id IS 'An indicator of whether or not this course being described is included in the computation of the studentâ€™s Grade Point Average (GPA). [CEDS Element: Course Grade Point Average Applicability, ID:000060] (Foreign key - Ref_Course_Gpa_Applicability)';
+COMMENT ON COLUMN ceds6sc_rdx.cte_course.ref_course_gpa_applicability_id IS 'An indicator of whether or not this course being described is included in the computation of the student’s Grade Point Average (GPA). [CEDS Element: Course Grade Point Average Applicability, ID:000060] (Foreign key - Ref_Course_Gpa_Applicability)';
 
 COMMENT ON COLUMN ceds6sc_rdx.cte_course.core_academic_course IS 'The course meets the state definition of a core academic course. [CEDS Element: Core Academic Course, ID:000518]';
 
@@ -1686,15 +1686,15 @@ COMMENT ON COLUMN ceds6sc_rdx.incident.ref_incident_location_id IS 'Identifies w
 
 COMMENT ON COLUMN ceds6sc_rdx.incident.ref_firearm_type_id IS 'The type of firearm. [CEDS Element: Firearm Type, ID:000557]';
 
-COMMENT ON COLUMN ceds6sc_rdx.incident.regulation_violated_description IS 'A description of the ruleâ€š regulationâ€š or standard that was violated when an incident occurred (e.g.â€š the identification of a relevant lawâ€š conduct standardâ€š or acceptable use policy). [CEDS Element: Incident Regulation Violated Description, ID: 001374]';
+COMMENT ON COLUMN ceds6sc_rdx.incident.regulation_violated_description IS 'A description of the rule‚ regulation‚ or standard that was violated when an incident occurred (e.g.‚ the identification of a relevant law‚ conduct standard‚ or acceptable use policy). [CEDS Element: Incident Regulation Violated Description, ID: 001374]';
 
-COMMENT ON COLUMN ceds6sc_rdx.incident.related_to_disability_manifestation_ind IS 'An indication whether a studentâ€™s behavior (offense) was a manifestation ofâ€š or related toâ€š a disability condition. [CEDS Element: Incident Related to Disability Manifestation, ID: 001375]';
+COMMENT ON COLUMN ceds6sc_rdx.incident.related_to_disability_manifestation_ind IS 'An indication whether a student’s behavior (offense) was a manifestation of‚ or related to‚ a disability condition. [CEDS Element: Incident Related to Disability Manifestation, ID: 001375]';
 
-COMMENT ON COLUMN ceds6sc_rdx.incident.reported_to_law_enforcement_ind IS 'An indication that the school resource officer or any other law enforcement official was notified about the incidentâ€š regardless of whether official action is taken. [CEDS Element: Incident Reported to Law Enforcement Indicator, ID: 001376]';
+COMMENT ON COLUMN ceds6sc_rdx.incident.reported_to_law_enforcement_ind IS 'An indication that the school resource officer or any other law enforcement official was notified about the incident‚ regardless of whether official action is taken. [CEDS Element: Incident Reported to Law Enforcement Indicator, ID: 001376]';
 
 COMMENT ON COLUMN ceds6sc_rdx.incident.ref_incident_multiple_offense_type_id IS 'An indication of whether the offense was primary or secondary in nature when a single incident included more than one type of offense. [CEDS Element: Incident Multiple Offense Type, ID:001369]';
 
-COMMENT ON COLUMN ceds6sc_rdx.incident.ref_incident_perpetrator_injury_type_id IS 'An indication of the occurrence of physical injury to the perpetrator(s) (participants) involved in the incident andâ€š if soâ€š the level of injury sustained. [CEDS Element: Incident Perpetrator Injury Type, ID:001371]';
+COMMENT ON COLUMN ceds6sc_rdx.incident.ref_incident_perpetrator_injury_type_id IS 'An indication of the occurrence of physical injury to the perpetrator(s) (participants) involved in the incident and‚ if so‚ the level of injury sustained. [CEDS Element: Incident Perpetrator Injury Type, ID:001371]';
 
 CREATE TABLE ceds6sc_rdx.individualized_program ( 
 	individualized_program_id integer  NOT NULL,
@@ -1782,7 +1782,7 @@ COMMENT ON COLUMN ceds6sc_rdx.k12_course.ref_additional_credit_type_id IS 'The t
 
 COMMENT ON COLUMN ceds6sc_rdx.k12_course.available_carnegie_unit_credit IS 'Measured in Carnegie units, the amount of credit available to a student who successfully meets the objectives of the course. A course meeting every day for one period of the school day over the span of a school year offers one Carnegie unit. A Carnegie unit is thus a measure of seat time rather than a measure of attainment of the course objectives. [CEDS Element: Available Carnegie Unit Credit, ID:000030]';
 
-COMMENT ON COLUMN ceds6sc_rdx.k12_course.ref_course_gpa_applicability_id IS 'An indicator of whether or not this course being described is included in the computation of the studentâ€™s Grade Point Average (GPA). [CEDS Element: Course Grade Point Average Applicability, ID:000060] (Foreign key - Ref_Course_Gpa_Applicability)';
+COMMENT ON COLUMN ceds6sc_rdx.k12_course.ref_course_gpa_applicability_id IS 'An indicator of whether or not this course being described is included in the computation of the student’s Grade Point Average (GPA). [CEDS Element: Course Grade Point Average Applicability, ID:000060] (Foreign key - Ref_Course_Gpa_Applicability)';
 
 COMMENT ON COLUMN ceds6sc_rdx.k12_course.core_academic_course IS 'The course meets the state definition of a core academic course. [CEDS Element: Core Academic Course, ID:000518]';
 
@@ -1806,7 +1806,7 @@ COMMENT ON COLUMN ceds6sc_rdx.k12_course.ref_sced_course_subject_area_id IS 'The
 
 COMMENT ON COLUMN ceds6sc_rdx.k12_course.ref_career_cluster_id IS 'The career cluster that defines the industry or occupational focus which may be associated with a career pathways program, plan of study, or course. [CEDS Element: Career Cluster, ID:001288]';
 
-COMMENT ON COLUMN ceds6sc_rdx.k12_course.ref_blended_learning_model_type_id IS 'A type of formal education program in which a student learns at least in part through online learning, with some element of student control over time, place, path, and/or pace; at least in part in a supervised brick-and-mortar location away from home; and the modalities along each studentâ€™s learning path within a course or subject are connected to provide an integrated learning experience. [CEDS Element: Blended Learning Model Type, ID:001287]';
+COMMENT ON COLUMN ceds6sc_rdx.k12_course.ref_blended_learning_model_type_id IS 'A type of formal education program in which a student learns at least in part through online learning, with some element of student control over time, place, path, and/or pace; at least in part in a supervised brick-and-mortar location away from home; and the modalities along each student’s learning path within a course or subject are connected to provide an integrated learning experience. [CEDS Element: Blended Learning Model Type, ID:001287]';
 
 COMMENT ON COLUMN ceds6sc_rdx.k12_course.ref_course_interaction_mode_id IS 'The primary type of interaction, synchronous or asynchronous, defined for the course. [CEDS Element: Course Interaction Mode, ID:001311]';
 
@@ -1860,7 +1860,7 @@ COMMENT ON COLUMN ceds6sc_rdx.k12_lea_federal_funds.ref_lea_funds_transfer_type_
 
 COMMENT ON COLUMN ceds6sc_rdx.k12_lea_federal_funds.public_school_choice_funds_spent IS 'The dollar amount spent on transportation for public school choice during the school year under Title I of ESEA as amended, Part A, Section 1116. [CEDS Element: Public School Choice Funds Spent, ID:000568]';
 
-COMMENT ON COLUMN ceds6sc_rdx.k12_lea_federal_funds.school_improvement_reserved_percent IS 'An indication of the percentage of the Title I, Part A allocation that the SEA reserved in accordance with Section 1003(a) of ESEA and Â§200.100(a) of ED''s regulations governing the reservation of funds for school improvement under Section 1003(a) of ESEA. [CEDS Element: School Improvement Reserved Funds Percentage, ID:000479]';
+COMMENT ON COLUMN ceds6sc_rdx.k12_lea_federal_funds.school_improvement_reserved_percent IS 'An indication of the percentage of the Title I, Part A allocation that the SEA reserved in accordance with Section 1003(a) of ESEA and §200.100(a) of ED''s regulations governing the reservation of funds for school improvement under Section 1003(a) of ESEA. [CEDS Element: School Improvement Reserved Funds Percentage, ID:000479]';
 
 COMMENT ON COLUMN ceds6sc_rdx.k12_lea_federal_funds.school_improvement_allocation IS 'The amount of Section 1003(a) and 1003(g) allocations to LEAs and Schools. [CEDS Element: School Improvement Allocation, ID:000480]';
 
@@ -2187,7 +2187,7 @@ COMMENT ON COLUMN ceds6sc_rdx.k12_student_course_section.ref_pre_and_post_test_i
 
 COMMENT ON COLUMN ceds6sc_rdx.k12_student_course_section.ref_progress_level_id IS 'The amount of progress shown in academic subjects. [CEDS Element: Progress Level, ID:000561]';
 
-COMMENT ON COLUMN ceds6sc_rdx.k12_student_course_section.ref_course_gpa_applicability_id IS 'An indicator of whether or not this course being described is included in the computation of the studentâ€™s Grade Point Average (GPA). [CEDS Element: Course Grade Point Average Applicability, ID:000060] (Foreign key - Ref_Course_Gpa_Applicability)';
+COMMENT ON COLUMN ceds6sc_rdx.k12_student_course_section.ref_course_gpa_applicability_id IS 'An indicator of whether or not this course being described is included in the computation of the student’s Grade Point Average (GPA). [CEDS Element: Course Grade Point Average Applicability, ID:000060] (Foreign key - Ref_Course_Gpa_Applicability)';
 
 COMMENT ON COLUMN ceds6sc_rdx.k12_student_course_section.number_of_credits_earned IS 'The number of credits an individual earns by the successful completion of a course. [CEDS Element: Number of Credits Earned, ID:000200]';
 
@@ -2232,7 +2232,7 @@ COMMENT ON COLUMN ceds6sc_rdx.k12_student_discipline.disciplinary_action_end_dat
 
 COMMENT ON COLUMN ceds6sc_rdx.k12_student_discipline.duration_of_disciplinary_action IS 'The length, in school days, of the disciplinary action. [CEDS Element: Duration of Disciplinary Action, ID:000511]';
 
-COMMENT ON COLUMN ceds6sc_rdx.k12_student_discipline.ref_discipline_length_difference_reason_id IS 'The reason for the difference, if any, between the official and actual lengths of a studentâ€™s disciplinary assignment. [CEDS Element: Discipline Action Length Difference Reason, ID:000609]  (Foreign key - Ref_Discipline_Length_Difference_Reason)';
+COMMENT ON COLUMN ceds6sc_rdx.k12_student_discipline.ref_discipline_length_difference_reason_id IS 'The reason for the difference, if any, between the official and actual lengths of a student’s disciplinary assignment. [CEDS Element: Discipline Action Length Difference Reason, ID:000609]  (Foreign key - Ref_Discipline_Length_Difference_Reason)';
 
 COMMENT ON COLUMN ceds6sc_rdx.k12_student_discipline.full_year_expulsion IS 'An expulsion with or without services for a period of one full year (i.e., 365 days). [CEDS Element: Full Year Expulsion, ID:000513]';
 
@@ -2248,7 +2248,7 @@ COMMENT ON COLUMN ceds6sc_rdx.k12_student_discipline.related_to_zero_tolerance_p
 
 COMMENT ON COLUMN ceds6sc_rdx.k12_student_discipline.incident_id IS 'Surrogate Key';
 
-COMMENT ON COLUMN ceds6sc_rdx.k12_student_discipline.iep_placement_meeting_indicator IS 'An indication as to whether an offense and/or disciplinary action resulted in a meeting of a studentâ€™s Individualized Education Program (IEP) team to determine appropriate placement. [CEDS Element: Disciplinary Action IEP Placement Meeting Indicator, ID: 001322]';
+COMMENT ON COLUMN ceds6sc_rdx.k12_student_discipline.iep_placement_meeting_indicator IS 'An indication as to whether an offense and/or disciplinary action resulted in a meeting of a student’s Individualized Education Program (IEP) team to determine appropriate placement. [CEDS Element: Disciplinary Action IEP Placement Meeting Indicator, ID: 001322]';
 
 COMMENT ON COLUMN ceds6sc_rdx.k12_student_discipline.ref_discipline_method_firearms_id IS 'The method used to discipline students who are not children with disabilities (IDEA) involved in firearms and other outcomes of firearms incidents. [CEDS Element: Discipline Method for Firearms Incidents, ID:000555]';
 
@@ -2387,7 +2387,7 @@ COMMENT ON COLUMN ceds6sc_rdx.learner_activity.course_section_id IS 'Surrogate k
 
 COMMENT ON COLUMN ceds6sc_rdx.learner_activity.organization_calendar_session_id IS 'Foreign key - Session';
 
-COMMENT ON COLUMN ceds6sc_rdx.learner_activity.title IS 'The titleÂ for work assigned to the learner, which can comprise of learning resources, activities, and assessments. [CEDS Element: Learner Activity Title, ID:000939]';
+COMMENT ON COLUMN ceds6sc_rdx.learner_activity.title IS 'The title for work assigned to the learner, which can comprise of learning resources, activities, and assessments. [CEDS Element: Learner Activity Title, ID:000939]';
 
 COMMENT ON COLUMN ceds6sc_rdx.learner_activity.description IS 'The description and context for the assignment  described in a way that the learner can understand. [CEDS Element: Learner Activity Description, ID:000940]';
 
@@ -2401,7 +2401,7 @@ COMMENT ON COLUMN ceds6sc_rdx.learner_activity.creation_date IS 'The creation da
 
 COMMENT ON COLUMN ceds6sc_rdx.learner_activity.maximum_time_allowed IS 'The time required to complete the assignment. [CEDS Element: Learner Activity Maximum Time Allowed, ID:000944]';
 
-COMMENT ON COLUMN ceds6sc_rdx.learner_activity.ref_learner_activity_maximum_time_allowed_units_id IS 'The unit of time of theÂ Maximum Time AllowedÂ value. [CEDS Element: Learner Activity Maximum Time Allowed Unit, ID:000945]  (Foreign key - Ref_Learner_Activity_Maximum_Time_Allowe_Units)';
+COMMENT ON COLUMN ceds6sc_rdx.learner_activity.ref_learner_activity_maximum_time_allowed_units_id IS 'The unit of time of the Maximum Time Allowed value. [CEDS Element: Learner Activity Maximum Time Allowed Unit, ID:000945]  (Foreign key - Ref_Learner_Activity_Maximum_Time_Allowe_Units)';
 
 COMMENT ON COLUMN ceds6sc_rdx.learner_activity.due_date IS 'The date assignment is due. [CEDS Element: Learner Activity Due Date, ID:000946]';
 
@@ -2536,13 +2536,13 @@ COMMENT ON COLUMN ceds6sc_rdx.learning_standard_item.code IS 'A human-referencea
 
 COMMENT ON COLUMN ceds6sc_rdx.learning_standard_item.url IS 'A network-resolvable Uniform Resource Locator (URL) pointing to the authoritative reference for the learning standard item. [CEDS Element: Learning Standard Item URL, ID:000874]';
 
-COMMENT ON COLUMN ceds6sc_rdx.learning_standard_item.type IS 'The textual label identifying the class of the statement as designated by the promulgating bodyâ€”e.g., standard, benchmark, strand, or topic. or level 1, level 2,... [CEDS Element: Learning Standard Item Type, ID:000691]';
+COMMENT ON COLUMN ceds6sc_rdx.learning_standard_item.type IS 'The textual label identifying the class of the statement as designated by the promulgating body—e.g., standard, benchmark, strand, or topic. or level 1, level 2,... [CEDS Element: Learning Standard Item Type, ID:000691]';
 
 COMMENT ON COLUMN ceds6sc_rdx.learning_standard_item.statement IS 'The text of the statement. The textual content that either describes a specific competency  or describes a less granular group of competencies within the taxonomy of the standards document. [CEDS Element: Learning Standard Item Statement, ID:000690]';
 
 COMMENT ON COLUMN ceds6sc_rdx.learning_standard_item.version IS 'A label assigned by the publisher indicating the version of the learning standard statement. [CEDS Element: Learning Standard Item Version, ID:001250]';
 
-COMMENT ON COLUMN ceds6sc_rdx.learning_standard_item.typical_age_range IS 'The typical range of ages for the contentâ€™s intended end user. [CEDS Element: Learning Standard Item Typical Age Range, ID:000870]';
+COMMENT ON COLUMN ceds6sc_rdx.learning_standard_item.typical_age_range IS 'The typical range of ages for the content’s intended end user. [CEDS Element: Learning Standard Item Typical Age Range, ID:000870]';
 
 COMMENT ON COLUMN ceds6sc_rdx.learning_standard_item.ref_language_id IS 'The default language of the text used for the content in the learning standard statement. [CEDS Element: Learning Standard Item Language, ID:000881]  (Foreign key - Ref_Language)';
 
@@ -2552,7 +2552,7 @@ COMMENT ON COLUMN ceds6sc_rdx.learning_standard_item.text_complexity_minimum_val
 
 COMMENT ON COLUMN ceds6sc_rdx.learning_standard_item.text_complexity_maximum_value IS 'The maximum value in the range of text complexity applicable to a language learning standard using the scaling system defined by Text Complexity System, e.g. Lexile(tm). [CEDS Element: Learning Standard Item Text Complexity Maximum Value, ID:001155]';
 
-COMMENT ON COLUMN ceds6sc_rdx.learning_standard_item.ref_blooms_taxonomy_domain_id IS 'Classification of the Learning Standard Item using Bloom''s Taxonomy Domains.Â  [CEDS Element: Learning Standard Item Blooms Taxonomy Domain, ID:000875]  (Foreign key - Ref_Blooms_Taxonomy_Domain)';
+COMMENT ON COLUMN ceds6sc_rdx.learning_standard_item.ref_blooms_taxonomy_domain_id IS 'Classification of the Learning Standard Item using Bloom''s Taxonomy Domains.  [CEDS Element: Learning Standard Item Blooms Taxonomy Domain, ID:000875]  (Foreign key - Ref_Blooms_Taxonomy_Domain)';
 
 COMMENT ON COLUMN ceds6sc_rdx.learning_standard_item.ref_multiple_intelligence_type_id IS 'Classification of the Learning Standard Item using intelligences defined for Howard Earl Gardner''s Theory of Multiple Intelligences. [CEDS Element: Learning Standard Item Multiple Intelligence, ID:000876]  (Foreign key - Ref_Multiple_Intelligenct_Type)';
 
@@ -3063,7 +3063,7 @@ COMMENT ON COLUMN ceds6sc_rdx.person_family.number_of_people_in_family IS 'Total
 
 COMMENT ON COLUMN ceds6sc_rdx.person_family.number_of_people_in_household IS 'Total number of persons residing in the same household. [CEDS Element: Number of People in Household, ID:000331]';
 
-COMMENT ON COLUMN ceds6sc_rdx.person_family.family_income IS 'Total income of family from all sources. Income includes money, wages or salary before deductions; net income from non-farm self-employment; net income from farm self-employment; regular payments from Social Security or railroad retirement; payments from unemployment compensation, strike benefits from union funds, workersâ€™ compensation, veterans benefits (with the exception noted below), public assistance (including Temporary Assistance for Needy Families, Supplemental Security Income, Emergency Assistance money payments, and non-Federally funded General Assistance or General Relief money payments); training stipends; alimony, child support, and military family allotments or other regular support from an absent family member or someone not living in the household; private pensions, government employee pensions (including military retirement pay), and regular insurance or annuity payments; college or university scholarships, grants, fellowships, and assistantships; and dividends, interest, net rental income, net royalties, and periodic receipts from estates or trusts; and net gambling or lottery winnings. [CEDS Element: Family Income, ID:000332]';
+COMMENT ON COLUMN ceds6sc_rdx.person_family.family_income IS 'Total income of family from all sources. Income includes money, wages or salary before deductions; net income from non-farm self-employment; net income from farm self-employment; regular payments from Social Security or railroad retirement; payments from unemployment compensation, strike benefits from union funds, workers’ compensation, veterans benefits (with the exception noted below), public assistance (including Temporary Assistance for Needy Families, Supplemental Security Income, Emergency Assistance money payments, and non-Federally funded General Assistance or General Relief money payments); training stipends; alimony, child support, and military family allotments or other regular support from an absent family member or someone not living in the household; private pensions, government employee pensions (including military retirement pay), and regular insurance or annuity payments; college or university scholarships, grants, fellowships, and assistantships; and dividends, interest, net rental income, net royalties, and periodic receipts from estates or trusts; and net gambling or lottery winnings. [CEDS Element: Family Income, ID:000332]';
 
 COMMENT ON COLUMN ceds6sc_rdx.person_family.ref_family_income_source_id IS 'Sources of total family income. [CEDS Element: Source of Family Income, ID:000333]  (Foreign key - Ref_Family_Income_Source)';
 
@@ -3569,7 +3569,7 @@ COMMENT ON COLUMN ceds6sc_rdx.ps_price_of_attendance.comprehensive_fee IS 'A sin
 
 COMMENT ON COLUMN ceds6sc_rdx.ps_price_of_attendance.other_student_expenses IS 'The amount of money (estimated by the financial aid office) needed by a person to cover expenses such as laundry, transportation, and entertainment. [CEDS Element: Other Student Expenses, ID:000752]';
 
-COMMENT ON COLUMN ceds6sc_rdx.ps_price_of_attendance.price_of_attendance IS 'The total amount institutions estimate that undergraduate-level full-time, first-time degree-seeking students will pay to attend before financial aid is considered. This price includes tuition and fees, books and supplies, room and board, and certain other designated expenses such as transportation. These estimates are the average amounts used by the financial aid office to determine a studentâ€™s financial aid. [CEDS Element: Price of Attendance, ID:000753]';
+COMMENT ON COLUMN ceds6sc_rdx.ps_price_of_attendance.price_of_attendance IS 'The total amount institutions estimate that undergraduate-level full-time, first-time degree-seeking students will pay to attend before financial aid is considered. This price includes tuition and fees, books and supplies, room and board, and certain other designated expenses such as transportation. These estimates are the average amounts used by the financial aid office to determine a student’s financial aid. [CEDS Element: Price of Attendance, ID:000753]';
 
 COMMENT ON COLUMN ceds6sc_rdx.ps_price_of_attendance.ipedscollection_year_designator IS 'The academic year, generally extending from September to June, in which IPEDS data is collected.  Most Institutional Characteristics, Salaries, Fall Staff, Fall Enrollment, and Employees by Assigned Position data are collected for the current year; Completions, 12-Month Enrollment, Student Financial Aid, and Finance data collections cover the prior year. [CEDS Element: IPEDS Collection Year Designator, ID:001613]';
 
@@ -3590,7 +3590,7 @@ COMMENT ON COLUMN ceds6sc_rdx.ps_section.grade_value_qualifier IS 'The grading s
 
 COMMENT ON COLUMN ceds6sc_rdx.ps_section.ref_cip_code_id IS 'A six-digit code in the form xx.xxxx that identifies instructional program specialties within educational institutions. [CEDS Element: Classification of Instructional Program Code, ID:000043]';
 
-COMMENT ON COLUMN ceds6sc_rdx.ps_section.ref_course_gpa_applicability_id IS 'An indicator of whether or not this course being described is included in the computation of the studentâ€™s Grade Point Average (GPA). [CEDS Element: Course Grade Point Average Applicability, ID:000060]';
+COMMENT ON COLUMN ceds6sc_rdx.ps_section.ref_course_gpa_applicability_id IS 'An indicator of whether or not this course being described is included in the computation of the student’s Grade Point Average (GPA). [CEDS Element: Course Grade Point Average Applicability, ID:000060]';
 
 COMMENT ON COLUMN ceds6sc_rdx.ps_section.ref_course_honors_type_id IS 'An indication that the course is or can be counted as an honors course. [CEDS Element: Course Honors Type, ID:001307]';
 
@@ -3716,7 +3716,7 @@ COMMENT ON TABLE ceds6sc_rdx.ps_student_application IS 'Information on an indivi
 
 COMMENT ON COLUMN ceds6sc_rdx.ps_student_application.organization_person_role_id IS 'Inherited surrogate key from Organization_Person_Role.';
 
-COMMENT ON COLUMN ceds6sc_rdx.ps_student_application.postsecondary_applicant IS 'An individual who has fulfilled the institutionâ€™s requirements to be considered for admission (including payment or waiving of the application fee, if any) and who has been notified of one of the following actions: admission, nonadmission, placement on waiting list, or application withdrawn (by applicant or institution). Include early decision, early action, and students who began studies during summer in this cohort. [CEDS Element: Postsecondary Applicant, ID:000755]';
+COMMENT ON COLUMN ceds6sc_rdx.ps_student_application.postsecondary_applicant IS 'An individual who has fulfilled the institution’s requirements to be considered for admission (including payment or waiving of the application fee, if any) and who has been notified of one of the following actions: admission, nonadmission, placement on waiting list, or application withdrawn (by applicant or institution). Include early decision, early action, and students who began studies during summer in this cohort. [CEDS Element: Postsecondary Applicant, ID:000755]';
 
 COMMENT ON COLUMN ceds6sc_rdx.ps_student_application.grade_point_average_cumulative IS 'A measure of average performance in all courses taken by a person during his or her school career as determined for record-keeping purposes. This is obtained by dividing the total grade points received by the total number of credits attempted. This usually includes grade points received and credits attempted in his or her current school as well as those transferred from schools in which the person was previously enrolled. [CEDS Element: Grade Point Average Cumulative, ID:000128]';
 
@@ -3797,9 +3797,9 @@ COMMENT ON COLUMN ceds6sc_rdx.ps_student_financial_aid.title_i_vparticipant_and_
 
 COMMENT ON COLUMN ceds6sc_rdx.ps_student_financial_aid.financial_aid_income_level IS 'The income level of an individual that is used by an institution''s financial aid office to determine an individual''s Expected Family Contribution (EFC). For dependent students this will include the parents'' adjusted gross income and the student''s adjusted gross income. For independent students this will include the student''s adjusted gross income. [CEDS Element: Financial Aid Income Level, ID: 001352]';
 
-COMMENT ON COLUMN ceds6sc_rdx.ps_student_financial_aid.ref_financial_aid_veterans_benefit_status_id IS 'An indication of whether a person is receiving Veteran''s benefits. [CEDS Element: Financial Aid Veteranâ€™s Benefit Status, ID:001609]';
+COMMENT ON COLUMN ceds6sc_rdx.ps_student_financial_aid.ref_financial_aid_veterans_benefit_status_id IS 'An indication of whether a person is receiving Veteran''s benefits. [CEDS Element: Financial Aid Veteran’s Benefit Status, ID:001609]';
 
-COMMENT ON COLUMN ceds6sc_rdx.ps_student_financial_aid.ref_financial_aid_veterans_benefit_type_id IS 'The type of Veteran''s benefits a person is receiving. [CEDS Element: Financial Aid Veteranâ€™s Benefit Type, ID:001610]';
+COMMENT ON COLUMN ceds6sc_rdx.ps_student_financial_aid.ref_financial_aid_veterans_benefit_type_id IS 'The type of Veteran''s benefits a person is receiving. [CEDS Element: Financial Aid Veteran’s Benefit Type, ID:001610]';
 
 CREATE TABLE ceds6sc_rdx.quarterly_employment_record ( 
 	quarterly_employment_record_id integer  NOT NULL,
@@ -4605,11 +4605,11 @@ CREATE TABLE ceds6sc_rdx.ref_blended_learning_model_type (
 	CONSTRAINT pk_ref_blended_learning_model_type PRIMARY KEY ( ref_blended_learning_model_type_id )
  );
 
-COMMENT ON TABLE ceds6sc_rdx.ref_blended_learning_model_type IS 'A type of formal education program in which a student learns at least in part through online learning, with some element of student control over time, place, path, and/or pace; at least in part in a supervised brick-and-mortar location away from home; and the modalities along each studentâ€™s learning path within a course or subject are connected to provide an integrated learning experience. [CEDS Element: Blended Learning Model Type, ID:001287]';
+COMMENT ON TABLE ceds6sc_rdx.ref_blended_learning_model_type IS 'A type of formal education program in which a student learns at least in part through online learning, with some element of student control over time, place, path, and/or pace; at least in part in a supervised brick-and-mortar location away from home; and the modalities along each student’s learning path within a course or subject are connected to provide an integrated learning experience. [CEDS Element: Blended Learning Model Type, ID:001287]';
 
 COMMENT ON COLUMN ceds6sc_rdx.ref_blended_learning_model_type.ref_blended_learning_model_type_id IS 'Surrogate Key';
 
-COMMENT ON COLUMN ceds6sc_rdx.ref_blended_learning_model_type.description IS 'A type of formal education program in which a student learns at least in part through online learning, with some element of student control over time, place, path, and/or pace; at least in part in a supervised brick-and-mortar location away from home; and the modalities along each studentâ€™s learning path within a course or subject are connected to provide an integrated learning experience. [CEDS Element: Blended Learning Model Type, ID:001287]';
+COMMENT ON COLUMN ceds6sc_rdx.ref_blended_learning_model_type.description IS 'A type of formal education program in which a student learns at least in part through online learning, with some element of student control over time, place, path, and/or pace; at least in part in a supervised brick-and-mortar location away from home; and the modalities along each student’s learning path within a course or subject are connected to provide an integrated learning experience. [CEDS Element: Blended Learning Model Type, ID:001287]';
 
 COMMENT ON COLUMN ceds6sc_rdx.ref_blended_learning_model_type.code IS 'A code or abbreviation for the type.';
 
@@ -5865,11 +5865,11 @@ CREATE TABLE ceds6sc_rdx.ref_financial_aid_veterans_benefit_status (
 	CONSTRAINT pk_ref_financial_aid_veterans_benefit_status PRIMARY KEY ( ref_financial_aid_veterans_benefit_status_id )
  );
 
-COMMENT ON TABLE ceds6sc_rdx.ref_financial_aid_veterans_benefit_status IS 'An indication of whether a person is receiving Veteran''s benefits.[CEDS Element: Financial Aid Veteranâ€™s Benefit Status, ID:001609]';
+COMMENT ON TABLE ceds6sc_rdx.ref_financial_aid_veterans_benefit_status IS 'An indication of whether a person is receiving Veteran''s benefits.[CEDS Element: Financial Aid Veteran’s Benefit Status, ID:001609]';
 
 COMMENT ON COLUMN ceds6sc_rdx.ref_financial_aid_veterans_benefit_status.ref_financial_aid_veterans_benefit_status_id IS 'Surrogate Key';
 
-COMMENT ON COLUMN ceds6sc_rdx.ref_financial_aid_veterans_benefit_status.description IS 'An indication of whether a person is receiving Veteran''s benefits. [CEDS Element: Financial Aid Veteranâ€™s Benefit Status, ID:001609]';
+COMMENT ON COLUMN ceds6sc_rdx.ref_financial_aid_veterans_benefit_status.description IS 'An indication of whether a person is receiving Veteran''s benefits. [CEDS Element: Financial Aid Veteran’s Benefit Status, ID:001609]';
 
 COMMENT ON COLUMN ceds6sc_rdx.ref_financial_aid_veterans_benefit_status.code IS 'A code or abbreviation for the type.';
 
@@ -6286,11 +6286,11 @@ CREATE TABLE ceds6sc_rdx.ref_incident_perpetrator_injury_type (
 	CONSTRAINT pk_ref_incident_perpetrator_injury_type PRIMARY KEY ( ref_incident_perpetrator_injury_type_id )
  );
 
-COMMENT ON TABLE ceds6sc_rdx.ref_incident_perpetrator_injury_type IS 'An indication of the occurrence of physical injury to the perpetrator(s) (participants) involved in the incident andâ€š if soâ€š the level of injury sustained. [CEDS Element: Incident Perpetrator Injury Type, ID:001371]';
+COMMENT ON TABLE ceds6sc_rdx.ref_incident_perpetrator_injury_type IS 'An indication of the occurrence of physical injury to the perpetrator(s) (participants) involved in the incident and‚ if so‚ the level of injury sustained. [CEDS Element: Incident Perpetrator Injury Type, ID:001371]';
 
 COMMENT ON COLUMN ceds6sc_rdx.ref_incident_perpetrator_injury_type.ref_incident_perpetrator_injury_type_id IS 'Surrogate Key';
 
-COMMENT ON COLUMN ceds6sc_rdx.ref_incident_perpetrator_injury_type.description IS 'An indication of the occurrence of physical injury to the perpetrator(s) (participants) involved in the incident andâ€š if soâ€š the level of injury sustained. [CEDS Element: Incident Perpetrator Injury Type, ID:001371]';
+COMMENT ON COLUMN ceds6sc_rdx.ref_incident_perpetrator_injury_type.description IS 'An indication of the occurrence of physical injury to the perpetrator(s) (participants) involved in the incident and‚ if so‚ the level of injury sustained. [CEDS Element: Incident Perpetrator Injury Type, ID:001371]';
 
 COMMENT ON COLUMN ceds6sc_rdx.ref_incident_perpetrator_injury_type.code IS 'A code or abbreviation for the type.';
 
@@ -6666,11 +6666,11 @@ CREATE TABLE ceds6sc_rdx.ref_learning_resource_access_rights_url (
 	CONSTRAINT pk_ref_learning_resource_access_rights_url PRIMARY KEY ( ref_learning_resource_access_rights_url_id )
  );
 
-COMMENT ON TABLE ceds6sc_rdx.ref_learning_resource_access_rights_url IS 'A Uniform Resource Locator (URL) that identifies the conditions that govern the userâ€™s ability to access a learning resource.[CEDS Element: Learning Resource Access Rights Url, ID:001561]';
+COMMENT ON TABLE ceds6sc_rdx.ref_learning_resource_access_rights_url IS 'A Uniform Resource Locator (URL) that identifies the conditions that govern the user’s ability to access a learning resource.[CEDS Element: Learning Resource Access Rights Url, ID:001561]';
 
 COMMENT ON COLUMN ceds6sc_rdx.ref_learning_resource_access_rights_url.ref_learning_resource_access_rights_url_id IS 'Surrogate Key';
 
-COMMENT ON COLUMN ceds6sc_rdx.ref_learning_resource_access_rights_url.description IS 'A Uniform Resource Locator (URL) that identifies the conditions that govern the userâ€™s ability to access a learning resource. [CEDS Element: Learning Resource Access Rights Url, ID:001561]';
+COMMENT ON COLUMN ceds6sc_rdx.ref_learning_resource_access_rights_url.description IS 'A Uniform Resource Locator (URL) that identifies the conditions that govern the user’s ability to access a learning resource. [CEDS Element: Learning Resource Access Rights Url, ID:001561]';
 
 COMMENT ON COLUMN ceds6sc_rdx.ref_learning_resource_access_rights_url.code IS 'A code or abbreviation for the type.';
 
@@ -8879,7 +8879,7 @@ COMMENT ON TABLE ceds6sc_rdx.assessment_form_section IS 'A section for an Assess
 
 COMMENT ON COLUMN ceds6sc_rdx.assessment_form_section.assessment_form_section_id IS 'Surrogate Key';
 
-COMMENT ON COLUMN ceds6sc_rdx.assessment_form_section.identifier IS 'A unique number or alphanumeric code assigned toÂ the Assessment Form Section using the system specified by Identification System for Assessment Form Section. [CEDS Element: Assessment Form Section Identifier, ID:001191]';
+COMMENT ON COLUMN ceds6sc_rdx.assessment_form_section.identifier IS 'A unique number or alphanumeric code assigned to the Assessment Form Section using the system specified by Identification System for Assessment Form Section. [CEDS Element: Assessment Form Section Identifier, ID:001191]';
 
 COMMENT ON COLUMN ceds6sc_rdx.assessment_form_section.ref_assessment_form_section_identification_system_id IS 'A coding scheme that is used for identification of an Assessment Form Section. [CEDS Element: Identification System for Assessment Form Section, ID:001190]  (Foreign key - Ref_Assessment_Form_Section_Identification_System)';
 
@@ -9083,7 +9083,7 @@ COMMENT ON COLUMN ceds6sc_rdx.assessment_need_apip_control.assessment_need_apip_
 
 COMMENT ON COLUMN ceds6sc_rdx.assessment_need_apip_control.assessment_personal_needs_profile_control_id IS 'Foreign key - Assessment_Personal_Needs_Profile_Control';
 
-COMMENT ON COLUMN ceds6sc_rdx.assessment_need_apip_control.assessment_need_time_multiplier IS 'Defines the multiplier to be applied to the time limit to determine the total testing time allowed when Additional Testing Time is specified as part of an Assessment Personal Needs Profile.  If the value is â€˜unlimitedâ€™ then there is no time limit for the test. [CEDS Element: Assessment Need Time Multiplier, ID:001049]';
+COMMENT ON COLUMN ceds6sc_rdx.assessment_need_apip_control.assessment_need_time_multiplier IS 'Defines the multiplier to be applied to the time limit to determine the total testing time allowed when Additional Testing Time is specified as part of an Assessment Personal Needs Profile.  If the value is ‘unlimited’ then there is no time limit for the test. [CEDS Element: Assessment Need Time Multiplier, ID:001049]';
 
 COMMENT ON COLUMN ceds6sc_rdx.assessment_need_apip_control.line_reader_highlight_color IS 'The color defined as part of an Assessment Personal Needs Profile to be used to highlight the point of line reader activity i.e. the line being read. [CEDS Element: Assessment Need Line Reader Highlight Color, ID:001050]';
 
@@ -9397,7 +9397,7 @@ COMMENT ON COLUMN ceds6sc_rdx.assessment_result.descriptive_feedback_source IS '
 
 COMMENT ON COLUMN ceds6sc_rdx.assessment_result.instructional_recommendation IS 'This provides the next steps for instruction for the student based upon the assessment results and student characteristics. [CEDS Element: Instructional Recommendation, ID:000370]';
 
-COMMENT ON COLUMN ceds6sc_rdx.assessment_result.included_in_ayp_calculation IS 'An indication of whether a proficiency score on the state assessment was included in the stateâ€™s calculation of adequate yearly progress (AYP). [CEDS Element: Assessment Result Included in Adequate Yearly Progress Calculation, ID:000576]';
+COMMENT ON COLUMN ceds6sc_rdx.assessment_result.included_in_ayp_calculation IS 'An indication of whether a proficiency score on the state assessment was included in the state’s calculation of adequate yearly progress (AYP). [CEDS Element: Assessment Result Included in Adequate Yearly Progress Calculation, ID:000576]';
 
 COMMENT ON COLUMN ceds6sc_rdx.assessment_result.date_updated IS 'The most recent date that the result was calculated/updated.  The value should be the same as Assessment Result Date Created if the subtest has only been scored once, but may be different if the score was recalculated with a different result. [CEDS Element: Assessment Result Date Updated, ID:000970]';
 
@@ -9529,7 +9529,7 @@ CREATE TABLE ceds6sc_rdx.competency_set (
 	CONSTRAINT pk_competency_set PRIMARY KEY ( competency_set_id )
  );
 
-COMMENT ON TABLE ceds6sc_rdx.competency_set IS 'The set of one or more competencies and criteria for completion of a learning goal, unit, course, program, degree, certification, or other achievement.   (The criteria may be â€˜allâ€™ competencies in the set or â€˜at-leastâ€™ # of competencies. Sets may be nested, e.g. all in subset A and 3 of 5 from subset B.)';
+COMMENT ON TABLE ceds6sc_rdx.competency_set IS 'The set of one or more competencies and criteria for completion of a learning goal, unit, course, program, degree, certification, or other achievement.   (The criteria may be ‘all’ competencies in the set or ‘at-least’ # of competencies. Sets may be nested, e.g. all in subset A and 3 of 5 from subset B.)';
 
 COMMENT ON COLUMN ceds6sc_rdx.competency_set.competency_set_id IS 'Surrogate key';
 

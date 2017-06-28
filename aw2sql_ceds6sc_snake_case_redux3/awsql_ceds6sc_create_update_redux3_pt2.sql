@@ -142,7 +142,7 @@ COMMENT ON COLUMN ceds6sc_rdx.k12_lea_federal_reporting.harassment_or_bullying_p
 
 COMMENT ON COLUMN ceds6sc_rdx.k12_lea_federal_reporting.ref_integrated_technology_status_id IS 'An indication of the extent to which the district has effectively and fully integrated technology, as defined by the state. [CEDS Element: Integrated Technology Status, ID:000170]  (Foreign key - Ref_Integrated_Technology_Status)';
 
-COMMENT ON COLUMN ceds6sc_rdx.k12_lea_federal_reporting.state_assessment_admin_funding IS 'The percentage of funds used to administer assessments required by section 1111(b) or to carry out other activities described in section 6111 and other activities related to ensuring that the Stateâ€™s schools and local educational agencies are held accountable for results. [CEDS Element: State Assessment Administration Funding, ID:000454]';
+COMMENT ON COLUMN ceds6sc_rdx.k12_lea_federal_reporting.state_assessment_admin_funding IS 'The percentage of funds used to administer assessments required by section 1111(b) or to carry out other activities described in section 6111 and other activities related to ensuring that the State’s schools and local educational agencies are held accountable for results. [CEDS Element: State Assessment Administration Funding, ID:000454]';
 
 COMMENT ON COLUMN ceds6sc_rdx.k12_lea_federal_reporting.state_assess_standards_funding IS 'The percentage of funds used to pay the costs of the development of the State assessments and standards required by section 1111(b). [CEDS Element: State Assessment Standards Funding, ID:000453]';
 
@@ -243,7 +243,7 @@ COMMENT ON COLUMN ceds6sc_rdx.k12_school.ref_charter_school_type_id IS 'Surrogat
 
 COMMENT ON COLUMN ceds6sc_rdx.k12_school.ref_increased_learning_time_type_id IS 'The types of increased learning time provided. [CEDS Element: Increased Learning Time Type, ID:000164]';
 
-COMMENT ON COLUMN ceds6sc_rdx.k12_school.ref_state_poverty_designation_id IS 'The designation of a schoolâ€™s poverty quartile for purposes of determining classes taught by highly qualified teachers in high and low poverty schools, according to stateâ€™s indicator of poverty. [CEDS Element: State Poverty Designation, ID:000585]';
+COMMENT ON COLUMN ceds6sc_rdx.k12_school.ref_state_poverty_designation_id IS 'The designation of a school’s poverty quartile for purposes of determining classes taught by highly qualified teachers in high and low poverty schools, according to state’s indicator of poverty. [CEDS Element: State Poverty Designation, ID:000585]';
 
 COMMENT ON COLUMN ceds6sc_rdx.k12_school.charter_school_approval_year IS 'The school year in which a charter school was initially approved. (YYYY-YYYY) [CEDS Elements: Charter School Approval Year, ID: 001293]';
 
@@ -297,7 +297,7 @@ COMMENT ON COLUMN ceds6sc_rdx.k12_school_status.ref_alternative_school_focus_id 
 
 COMMENT ON COLUMN ceds6sc_rdx.k12_school_status.ref_internet_access_id IS 'The type of internet access available. [CEDS Element: Internet Access, ID:000587]  (Foreign key - Ref_Internet_Access)';
 
-COMMENT ON COLUMN ceds6sc_rdx.k12_school_status.ref_restructuring_action_id IS 'The types of actions being implemented in Title I schools as a result of the school being in an improvement status of restructuring â€“ year 2 (implementation year). [CEDS Element: Restructuring Action, ID:000232]  (Foreign key - Ref_Restructuring_Action)';
+COMMENT ON COLUMN ceds6sc_rdx.k12_school_status.ref_restructuring_action_id IS 'The types of actions being implemented in Title I schools as a result of the school being in an improvement status of restructuring – year 2 (implementation year). [CEDS Element: Restructuring Action, ID:000232]  (Foreign key - Ref_Restructuring_Action)';
 
 COMMENT ON COLUMN ceds6sc_rdx.k12_school_status.ref_title_i_school_status_id IS 'An indication that a school is designated under state and federal regulations as being eligible for participation in programs authorized by Title I of ESEA as amended and whether it has a Title I program. [CEDS Element: Title I School Status, ID:000285]  (Foreign key - Ref_Title_I_School_Status)';
 
@@ -701,9 +701,9 @@ COMMENT ON COLUMN ceds6sc_rdx.learning_resource.ref_language_id IS 'The primary 
 
 COMMENT ON COLUMN ceds6sc_rdx.learning_resource.time_required IS 'The approximate or typical time it takes to work with or through this learning resource for the typical intended target audience. [CEDS Element: Learning Resource Time Required, ID:000924]';
 
-COMMENT ON COLUMN ceds6sc_rdx.learning_resource.typical_age_range_minimum IS 'The minimum for the typical range of ages of the contentâ€™s intended end user. [CEDS Element: Learning Resource Typical Age Range Minimum, ID:000925]';
+COMMENT ON COLUMN ceds6sc_rdx.learning_resource.typical_age_range_minimum IS 'The minimum for the typical range of ages of the content’s intended end user. [CEDS Element: Learning Resource Typical Age Range Minimum, ID:000925]';
 
-COMMENT ON COLUMN ceds6sc_rdx.learning_resource.typical_age_range_maximum IS 'The maximum for the typical range of ages of the contentâ€™s intended end user. [CEDS Element: Learning Resource Typical Age Range Maximum, ID:000926]';
+COMMENT ON COLUMN ceds6sc_rdx.learning_resource.typical_age_range_maximum IS 'The maximum for the typical range of ages of the content’s intended end user. [CEDS Element: Learning Resource Typical Age Range Maximum, ID:000926]';
 
 COMMENT ON COLUMN ceds6sc_rdx.learning_resource.text_complexity_value IS 'The complexity of the text using the scaling system defined by Text Complexity System, e.g. Lexile(tm). [CEDS Element: Learning Resource Text Complexity Value, ID:000929]';
 
@@ -739,7 +739,7 @@ COMMENT ON COLUMN ceds6sc_rdx.learning_resource.learning_resource_publisher_emai
 
 COMMENT ON COLUMN ceds6sc_rdx.learning_resource.learning_resource_publisher_url IS 'A Uniform Resource Locator (URL) attributed to the publisher of a learning resource. [CEDS Element: Learning Resource Publisher URL, ID:001568]';
 
-COMMENT ON COLUMN ceds6sc_rdx.learning_resource.ref_learning_resource_access_rights_url_id IS 'A Uniform Resource Locator (URL) that identifies the conditions that govern the userâ€™s ability to access a learning resource. [CEDS Element: Learning Resource Access Rights Url, ID:001561]';
+COMMENT ON COLUMN ceds6sc_rdx.learning_resource.ref_learning_resource_access_rights_url_id IS 'A Uniform Resource Locator (URL) that identifies the conditions that govern the user’s ability to access a learning resource. [CEDS Element: Learning Resource Access Rights Url, ID:001561]';
 
 COMMENT ON COLUMN ceds6sc_rdx.learning_resource.ref_learning_resource_author_type_id IS 'The type of entity, organization or person, that authored the learning resource. [CEDS Element: Learning Resource Author Type, ID:001562]';
 
@@ -1063,7 +1063,7 @@ COMMENT ON COLUMN ceds6sc_rdx.organization_federal_accountability.ref_proficienc
 
 COMMENT ON COLUMN ceds6sc_rdx.organization_federal_accountability.persistently_dangerous_status IS 'An indication of whether the school is identified as persistently dangerous in accordance with state definition. [CEDS Element: Persistently Dangerous Status, ID:000210]';
 
-COMMENT ON COLUMN ceds6sc_rdx.organization_federal_accountability.ref_reconstituted_status_id IS 'An indication that the school was restructured, transformed or otherwise changed as a consequence of the stateâ€™s accountability system under ESEA or as a result of School Improvement Grants (SIG). [CEDS Element: Reconstituted Status, ID:000230]  (Foreign key - Ref_Reconstituted_Status)';
+COMMENT ON COLUMN ceds6sc_rdx.organization_federal_accountability.ref_reconstituted_status_id IS 'An indication that the school was restructured, transformed or otherwise changed as a consequence of the state’s accountability system under ESEA or as a result of School Improvement Grants (SIG). [CEDS Element: Reconstituted Status, ID:000230]  (Foreign key - Ref_Reconstituted_Status)';
 
 COMMENT ON COLUMN ceds6sc_rdx.organization_federal_accountability.ref_elementary_middle_additional_id IS 'An indication of whether the school or district met the Elementary/Middle Additional Indicator requirement in accordance with state definition for the purpose of determining Adequate Yearly Progress (AYP). [CEDS Element: Elementary-Middle Additional Indicator Status, ID:000091]  (Foreign key - Ref_Elementary_Middle_Additional)';
 
@@ -1431,7 +1431,7 @@ COMMENT ON COLUMN ceds6sc_rdx.person_military.person_id IS 'Surrogate key from P
 
 COMMENT ON COLUMN ceds6sc_rdx.person_military.ref_military_active_student_indicator_id IS 'An indication that the student is currently serving on Active Duty, in the National Guard, or in the Reserve components of the United States military services [CEDS Element: Military Active Student Indicator, ID:001577]';
 
-COMMENT ON COLUMN ceds6sc_rdx.person_military.ref_military_connected_student_indicator_id IS 'An indication that the studentâ€™s parent or guardian is on Active Duty, in the National Guard, or in the Reserve components of the United States military services [CEDS Element: Military Connected Student Indicator, ID:001576]';
+COMMENT ON COLUMN ceds6sc_rdx.person_military.ref_military_connected_student_indicator_id IS 'An indication that the student’s parent or guardian is on Active Duty, in the National Guard, or in the Reserve components of the United States military services [CEDS Element: Military Connected Student Indicator, ID:001576]';
 
 COMMENT ON COLUMN ceds6sc_rdx.person_military.ref_military_veteran_student_indicator_id IS 'An indication that the student is a veteran who served on Active Duty, in the National Guard, or in the Reserve components of the United States military services [CEDS Element: Military Veteran Student Indicator, ID:001578]';
 
@@ -1739,7 +1739,7 @@ COMMENT ON COLUMN ceds6sc_rdx.ps_program.ref_ps_exit_or_withdrawal_type_id IS ' 
 
 COMMENT ON COLUMN ceds6sc_rdx.ps_program.ref_ps_program_level_id IS 'The level describing the concentration of study for a postsecondary program. [CEDS Element: Postsecondary Program Level, ID:001616]';
 
-COMMENT ON COLUMN ceds6sc_rdx.ps_program.ref_dqpcategories_of_learning_id IS 'The Lumina Foundation''s Degree Qualifications Profile offers reference points for what students should know and be able to do upon completion of associate, bachelor''s and master''s degrees â€“ in any field of study. The DQP Categories of Learning provide a profile of what degrees mean within which specific proficiencies may be defined. [CEDS Element: DQP Categories of Learning, ID:001641]';
+COMMENT ON COLUMN ceds6sc_rdx.ps_program.ref_dqpcategories_of_learning_id IS 'The Lumina Foundation''s Degree Qualifications Profile offers reference points for what students should know and be able to do upon completion of associate, bachelor''s and master''s degrees – in any field of study. The DQP Categories of Learning provide a profile of what degrees mean within which specific proficiencies may be defined. [CEDS Element: DQP Categories of Learning, ID:001641]';
 
 CREATE TABLE ceds6sc_rdx.ps_section_location ( 
 	organization_id      integer  NOT NULL,
@@ -2754,7 +2754,7 @@ COMMENT ON TABLE ceds6sc_rdx.ref_blooms_taxonomy_domain IS 'Classification of th
 
 COMMENT ON COLUMN ceds6sc_rdx.ref_blooms_taxonomy_domain.ref_blooms_taxonomy_domain_id IS 'Surrogate Key';
 
-COMMENT ON COLUMN ceds6sc_rdx.ref_blooms_taxonomy_domain.description IS 'Classification of the Learning Standard Item using Bloom''s Taxonomy Domains.Â  [CEDS Element: Learning Standard Item Blooms Taxonomy Domain, ID:000875]';
+COMMENT ON COLUMN ceds6sc_rdx.ref_blooms_taxonomy_domain.description IS 'Classification of the Learning Standard Item using Bloom''s Taxonomy Domains.  [CEDS Element: Learning Standard Item Blooms Taxonomy Domain, ID:000875]';
 
 COMMENT ON COLUMN ceds6sc_rdx.ref_blooms_taxonomy_domain.code IS 'A code or abbreviation for the type.';
 
@@ -3090,11 +3090,11 @@ CREATE TABLE ceds6sc_rdx.ref_course_gpa_applicability (
 	CONSTRAINT pk_ref_course_gpa_applicability PRIMARY KEY ( ref_course_gpaapplicability_id )
  );
 
-COMMENT ON TABLE ceds6sc_rdx.ref_course_gpa_applicability IS 'An indicator of whether or not this course being described is included in the computation of the studentâ€™s Grade Point Average (GPA). [CEDS Element: Course Grade Point Average Applicability, ID:000060]';
+COMMENT ON TABLE ceds6sc_rdx.ref_course_gpa_applicability IS 'An indicator of whether or not this course being described is included in the computation of the student’s Grade Point Average (GPA). [CEDS Element: Course Grade Point Average Applicability, ID:000060]';
 
 COMMENT ON COLUMN ceds6sc_rdx.ref_course_gpa_applicability.ref_course_gpaapplicability_id IS 'Surrogate Key';
 
-COMMENT ON COLUMN ceds6sc_rdx.ref_course_gpa_applicability.description IS 'An indicator of whether or not this course being described is included in the computation of the studentâ€™s Grade Point Average (GPA). [CEDS Element: Course Grade Point Average Applicability, ID:000060] (Foreign key - Ref_Course_Gpa_Applicability)';
+COMMENT ON COLUMN ceds6sc_rdx.ref_course_gpa_applicability.description IS 'An indicator of whether or not this course being described is included in the computation of the student’s Grade Point Average (GPA). [CEDS Element: Course Grade Point Average Applicability, ID:000060] (Foreign key - Ref_Course_Gpa_Applicability)';
 
 COMMENT ON COLUMN ceds6sc_rdx.ref_course_gpa_applicability.code IS 'A code or abbreviation for the type.';
 
@@ -3410,11 +3410,11 @@ CREATE TABLE ceds6sc_rdx.ref_discipline_length_difference_reason (
 	CONSTRAINT pk_ref_discipline_length_difference_reason PRIMARY KEY ( ref_discipline_length_difference_reason_id )
  );
 
-COMMENT ON TABLE ceds6sc_rdx.ref_discipline_length_difference_reason IS 'The reason for the difference, if any, between the official and actual lengths of a studentâ€™s disciplinary assignment. [CEDS Element: Discipline Action Length Difference Reason, ID:000609]';
+COMMENT ON TABLE ceds6sc_rdx.ref_discipline_length_difference_reason IS 'The reason for the difference, if any, between the official and actual lengths of a student’s disciplinary assignment. [CEDS Element: Discipline Action Length Difference Reason, ID:000609]';
 
 COMMENT ON COLUMN ceds6sc_rdx.ref_discipline_length_difference_reason.ref_discipline_length_difference_reason_id IS 'Surrogate Key';
 
-COMMENT ON COLUMN ceds6sc_rdx.ref_discipline_length_difference_reason.description IS 'The reason for the difference, if any, between the official and actual lengths of a studentâ€™s disciplinary assignment. [CEDS Element: Discipline Action Length Difference Reason, ID:000609]';
+COMMENT ON COLUMN ceds6sc_rdx.ref_discipline_length_difference_reason.description IS 'The reason for the difference, if any, between the official and actual lengths of a student’s disciplinary assignment. [CEDS Element: Discipline Action Length Difference Reason, ID:000609]';
 
 COMMENT ON COLUMN ceds6sc_rdx.ref_discipline_length_difference_reason.code IS 'A code or abbreviation for the type.';
 
@@ -3470,11 +3470,11 @@ CREATE TABLE ceds6sc_rdx.ref_dqpcategories_of_learning (
 	CONSTRAINT pk_ref_dqpcategories_of_learning PRIMARY KEY ( ref_dqpcategories_of_learning_id )
  );
 
-COMMENT ON TABLE ceds6sc_rdx.ref_dqpcategories_of_learning IS 'The Lumina Foundation''s Degree Qualifications Profile offers reference points for what students should know and be able to do upon completion of associate, bachelor''s and master''s degrees â€“ in any field of study. The DQP Categories of Learning provide a profile of what degrees mean within which specific proficiencies may be defined.[CEDS Element: DQP Categories of Learning, ID:001641]';
+COMMENT ON TABLE ceds6sc_rdx.ref_dqpcategories_of_learning IS 'The Lumina Foundation''s Degree Qualifications Profile offers reference points for what students should know and be able to do upon completion of associate, bachelor''s and master''s degrees – in any field of study. The DQP Categories of Learning provide a profile of what degrees mean within which specific proficiencies may be defined.[CEDS Element: DQP Categories of Learning, ID:001641]';
 
 COMMENT ON COLUMN ceds6sc_rdx.ref_dqpcategories_of_learning.ref_dqpcategories_of_learning_id IS 'Surrogate Key';
 
-COMMENT ON COLUMN ceds6sc_rdx.ref_dqpcategories_of_learning.description IS 'The Lumina Foundation''s Degree Qualifications Profile offers reference points for what students should know and be able to do upon completion of associate, bachelor''s and master''s degrees â€“ in any field of study. The DQP Categories of Learning provide a profile of what degrees mean within which specific proficiencies may be defined. [CEDS Element: DQP Categories of Learning, ID:001641]';
+COMMENT ON COLUMN ceds6sc_rdx.ref_dqpcategories_of_learning.description IS 'The Lumina Foundation''s Degree Qualifications Profile offers reference points for what students should know and be able to do upon completion of associate, bachelor''s and master''s degrees – in any field of study. The DQP Categories of Learning provide a profile of what degrees mean within which specific proficiencies may be defined. [CEDS Element: DQP Categories of Learning, ID:001641]';
 
 COMMENT ON COLUMN ceds6sc_rdx.ref_dqpcategories_of_learning.code IS 'A code or abbreviation for the type.';
 
@@ -4029,11 +4029,11 @@ CREATE TABLE ceds6sc_rdx.ref_financial_aid_veterans_benefit_type (
 	CONSTRAINT pk_ref_financial_aid_veterans_benefit_type PRIMARY KEY ( ref_financial_aid_veterans_benefit_type_id )
  );
 
-COMMENT ON TABLE ceds6sc_rdx.ref_financial_aid_veterans_benefit_type IS 'The type of Veteran''s benefits a person is receiving.[CEDS Element: Financial Aid Veteranâ€™s Benefit Type, ID:001610]';
+COMMENT ON TABLE ceds6sc_rdx.ref_financial_aid_veterans_benefit_type IS 'The type of Veteran''s benefits a person is receiving.[CEDS Element: Financial Aid Veteran’s Benefit Type, ID:001610]';
 
 COMMENT ON COLUMN ceds6sc_rdx.ref_financial_aid_veterans_benefit_type.ref_financial_aid_veterans_benefit_type_id IS 'Surrogate Key';
 
-COMMENT ON COLUMN ceds6sc_rdx.ref_financial_aid_veterans_benefit_type.description IS 'The type of Veteran''s benefits a person is receiving. [CEDS Element: Financial Aid Veteranâ€™s Benefit Type, ID:001610]';
+COMMENT ON COLUMN ceds6sc_rdx.ref_financial_aid_veterans_benefit_type.description IS 'The type of Veteran''s benefits a person is receiving. [CEDS Element: Financial Aid Veteran’s Benefit Type, ID:001610]';
 
 COMMENT ON COLUMN ceds6sc_rdx.ref_financial_aid_veterans_benefit_type.code IS 'A code or abbreviation for the type.';
 
@@ -4769,11 +4769,11 @@ CREATE TABLE ceds6sc_rdx.ref_learner_activity_maximum_time_allowed_units (
 	CONSTRAINT pk_ref_learner_activity_maximum_time_allowed_units PRIMARY KEY ( ref_learner_activity_maximum_time_allowed_units_id )
  );
 
-COMMENT ON TABLE ceds6sc_rdx.ref_learner_activity_maximum_time_allowed_units IS 'The unit of time of theÂ Maximum Time AllowedÂ value. [CEDS Element: Learner Activity Maximum Time Allowed Unit, ID:000945]';
+COMMENT ON TABLE ceds6sc_rdx.ref_learner_activity_maximum_time_allowed_units IS 'The unit of time of the Maximum Time Allowed value. [CEDS Element: Learner Activity Maximum Time Allowed Unit, ID:000945]';
 
 COMMENT ON COLUMN ceds6sc_rdx.ref_learner_activity_maximum_time_allowed_units.ref_learner_activity_maximum_time_allowed_units_id IS 'Surrogate Key';
 
-COMMENT ON COLUMN ceds6sc_rdx.ref_learner_activity_maximum_time_allowed_units.description IS 'The unit of time of theÂ Maximum Time AllowedÂ value. [CEDS Element: Learner Activity Maximum Time Allowed Unit, ID:000945]';
+COMMENT ON COLUMN ceds6sc_rdx.ref_learner_activity_maximum_time_allowed_units.description IS 'The unit of time of the Maximum Time Allowed value. [CEDS Element: Learner Activity Maximum Time Allowed Unit, ID:000945]';
 
 COMMENT ON COLUMN ceds6sc_rdx.ref_learner_activity_maximum_time_allowed_units.code IS 'A code or abbreviation for the type.';
 
