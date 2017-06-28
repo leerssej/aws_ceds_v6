@@ -9,13 +9,7 @@
 
 library(tidyverse)
 library(magrittr)
-# library(RPostgres)
-# library(googlesheets)
-# library(readxl)
-# library(ggmap)
-# library(geosphere)
-# library(stringdist)
-# library(RecordLinkage)
+
 ###### 1. Load AWSQL & Slice Up Script into DbSchema executable size blocks ######
 origscript_path <- "aw2sql_ceds6sc_snake_case_redux/aw2sql_ceds6sc_redux_complete.sql"
 # Load full script
@@ -59,6 +53,8 @@ ceds6sc %<>% gsub(", ''(\\w+)(\\s\\w+)', ",  ", '\\1\\2', ", ., perl = T, ignore
 ceds6sc %<>% gsub(", ''(\\w+)', ",  ", '\\1', ", ., perl = T, ignore.case = T)
 ceds6sc %<>% gsub("'(\\w+)'(\\w+\\s\\w+)'",  "'\\1\\2', ", ., perl = T, ignore.case = T)
 
+
+# pomodoro is buzzing - it is long past time to have this script loaded
 ceds6sc %<>% gsub("'Ta'izzi-Adeni Arabic'",  "'Taizzi Adeni Arabic'", ., perl = T, ignore.case = T)
 ceds6sc %<>% gsub("'Daats'i\\?in'",  "'Daatsi?in'", ., perl = T, ignore.case = T)
 ceds6sc %<>% gsub("d'Oreille",  "d''Oreille", ., perl = T, ignore.case = T)
@@ -78,39 +74,19 @@ ceds6sc %<>% gsub("St. Mary's",  "St. Mary''s", ., perl = T, ignore.case = T)
 ceds6sc %<>% gsub("Port Gamble S'Klallam Tribe",  "Port Gamble S''Klallam Tribe", ., perl = T, ignore.case = T)
 ceds6sc %<>% gsub("(?<=\\w )'snap'(?= \\w)",  "''snap''", ., perl = T, ignore.case = T)
 
-
-# ceds6sc %<>% gsub("Ta'oih",  "Ta oih", ., perl = T, ignore.case = T)
-# ceds6sc %<>% gsub("'Te'un'",  "'Te un'", ., perl = T, ignore.case = T)
-# ceds6sc %<>% gsub("'O'du'",  "'O du'", ., perl = T, ignore.case = T)
-# ceds6sc %<>% gsub("'Tz'utujil'",  "'Tz utujil'", ., perl = T, ignore.case = T)
-# ceds6sc %<>% gsub("Buhi'non",  "Buhi non", ., perl = T, ignore.case = T)
-# ceds6sc %<>% gsub("'Ulumanda''",  "'Ulumanda'", ., perl = T, ignore.case = T)
-# ceds6sc %<>% gsub("'Uma' Lung'",  "'Uma Lung'", ., perl = T, ignore.case = T)
-# ceds6sc %<>% gsub("'Urak Lawoi''",  "'Urak Lawoi'", ., perl = T, ignore.case = T)
-# ceds6sc %<>% gsub("'Vera'a'",  "'Vera a'", ., perl = T, ignore.case = T)
-# ceds6sc %<>% gsub("'Wa'ema'",  "'Wa ema'", ., perl = T, ignore.case = T)
-# ceds6sc %<>% gsub("'Waima'a'",  "'Waima a'", ., perl = T, ignore.case = T)
-# ceds6sc %<>% gsub("'Kho'ini'",  "'Kho ini'", ., perl = T, ignore.case = T)
-# ceds6sc %<>% gsub("'Kaco''",  "'Kaco'", ., perl = T, ignore.case = T)
-# ceds6sc %<>% gsub("'Uma' Lasan'",  "'Uma Lasan'", ., perl = T, ignore.case = T)
-# ceds6sc %<>% gsub("'Ke'o'",  "'Ke o'", ., perl = T, ignore.case = T)
-# ceds6sc %<>% gsub("'Lang'e'",  "'Lang e'", ., perl = T, ignore.case = T)
-# ceds6sc %<>% gsub("'E'ma Buyang'",  "'E ma Buyang'", ., perl = T, ignore.case = T)
-
-
 ###### 3. Write Out the Sliced Files ### ###
 # find the directory to read to
 clippable_fileroot <- "aw2sql_ceds6sc_snake_case_redux/"
+complete_translation <- "ceds6sc_aws_redux.sql"
+completetranslation_filepath <- paste0(clippable_fileroot, complete_translation)
 # the whole script
-write_lines(ceds6sc, paste0(clippable_fileroot, "ceds6sc_aws_redux.sql"))
+write_lines(ceds6sc, completetranslation_filepath)
 
 ###### 4. Chop script into DbSchema sized chunks ### ###
 # find the file to read from
-clippable_filepath <- paste0(clippable_fileroot, "ceds6sc_aws_redux.sql")
+clippable_filepath <- completetranslation_filepath
 
-# find the file to read blocks from
-# chop into DbSchema bite sized blocks
-# write out into the world
+# use the above file to read blocks out of and then write them out into the world
 block_1 <- read_lines(clippable_filepath, n_max = 9950)
 write_lines(block_1, paste0(clippable_fileroot, "awsql_ceds6sc_create_update_pt1.sql"))
 
@@ -124,43 +100,3 @@ block_4 <- read_lines(clippable_filepath, skip = 29885, n_max = 10000)
 write_lines(block_4, paste0(clippable_fileroot, "awsql_ceds6sc_create_update_pt4.sql"))
  
 # utils::file.edit('awsql_ceds6_snake_case/awsql_ceds6sc_create_update_pt1.sql', editor = "/Program Files/Sublime Text 3/sublime_text.exe")
-
-
-
-# ceds6sc %<>% gsub("'To'abaita'",  "'Toabaita'", ., perl = T, ignore.case = T)
-# ceds6sc %<>% gsub("'To'abaita'",  "'Toabaita'", ., perl = T, ignore.case = T)
-# ceds6sc %<>% gsub("Asaro'o",  "Asaroo", ., perl = T, ignore.case = T)
-# ceds6sc %<>% gsub("'Me'en'",  "'Meen'", ., perl = T, ignore.case = T)
-# ceds6sc %<>% gsub("'Naka'ela'",  "'Nakaela'", ., perl = T, ignore.case = T)
-# ceds6sc %<>% gsub("'Ngan'gityemerri'",  "'Ngangityemerri'", ., perl = T, ignore.case = T)
-# ceds6sc %<>% gsub("'Ngbaka Ma'bo'",  "'Ngbaka Mabo'", ., perl = T, ignore.case = T)
-# ceds6sc %<>% gsub("'Nisga'a'",  "'Nisgaa'", ., perl = T, ignore.case = T)
-# ceds6sc %<>% gsub("Eastern Ngad'a",  "Eastern Ngada", ., perl = T, ignore.case = T)
-# ceds6sc %<>% gsub("Ngatik Men's Creole",  "Ngatik Mens Creole", ., perl = T, ignore.case = T)
-# ceds6sc %<>% gsub("N'Ko",  "N Ko", ., perl = T, ignore.case = T)
-# ceds6sc %<>% gsub("iuafo'ou",  "iuafo ou", ., perl = T, ignore.case = T)
-# ceds6sc %<>% gsub("Ngad'a",  "Ngad a", ., perl = T, ignore.case = T)
-# ceds6sc %<>% gsub("Nda'nda'",  "Nda nda", ., perl = T, ignore.case = T)
-# ceds6sc %<>% gsub("K'iche'",  "Kiche", ., perl = T, ignore.case = T)
-# ceds6sc %<>% gsub("Tohono O'odham",  "Tohono O odham", ., perl = T, ignore.case = T)
-# ceds6sc %<>% gsub("Oya'oya",  "Oya oya", ., perl = T, ignore.case = T)
-# ceds6sc %<>% gsub("E'\\?apa Woromaipu",  "Eapa Woromaipu", ., perl = T, ignore.case = T)
-# ceds6sc %<>% gsub("Phana'",  "Phana", ., perl = T, ignore.case = T)
-# ceds6sc %<>% gsub("Palu'e",  "Palue", ., perl = T, ignore.case = T)
-# ceds6sc %<>% gsub("Brooke's Point Palawano",  "Brookes Point Palawano", ., perl = T, ignore.case = T)
-# ceds6sc %<>% gsub("Poqomchi'",  "Poqomchi", ., perl = T, ignore.case = T)
-# ceds6sc %<>% gsub("Pa'a",  "Pa a", ., perl = T, ignore.case = T)
-# ceds6sc %<>% gsub("Lua'",  "Lua", ., perl = T, ignore.case = T)
-# ceds6sc %<>% gsub("Qashqa'i",  "Qashqai", ., perl = T, ignore.case = T)
-# ceds6sc %<>% gsub("'Tae''",  "'Tae'", ., perl = T, ignore.case = T)
-# ceds6sc %<>% gsub("'Sa'och'",  "'Sa och'", ., perl = T, ignore.case = T)
-# ceds6sc %<>% gsub("Toraja-Sa'dan",  "Toraja-Sadan", ., perl = T, ignore.case = T)
-# ceds6sc %<>% gsub("'Ma'ya'",  "'Ma ya'", ., perl = T, ignore.case = T)
-# ceds6sc %<>% gsub("'Southern Ma'di'",  "'Southern Madi'", ., perl = T, ignore.case = T)
-# ceds6sc %<>% gsub("'Sa'ban'",  "'Sa ban'", ., perl = T, ignore.case = T)
-# ceds6sc %<>% gsub("'So'a'",  "'So a'", ., perl = T, ignore.case = T)
-# ceds6sc %<>% gsub("'Silt'e'",  "'Silt e'", ., perl = T, ignore.case = T)
-# ceds6sc %<>% gsub("'Malinaltepec Me'phaa'",  "'Malinaltepec Me phaa'", ., perl = T, ignore.case = T)
-# ceds6sc %<>% gsub("'T'en'",  "'T en'", ., perl = T, ignore.case = T)
-# ceds6sc %<>% gsub("'Talondo''",  "'Talondo'", ., perl = T, ignore.case = T)
-# ceds6sc %<>% gsub("'Ten'edn'",  "'Ten edn'", ., perl = T, ignore.case = T)
