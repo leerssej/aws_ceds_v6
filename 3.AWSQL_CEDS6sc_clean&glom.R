@@ -51,7 +51,7 @@ ceds6sc %<>% gsub("'(\\w+\\s)(\\w+)'(\\w+)'",  "'\\1 \\2 \\3'", ., perl = T, ign
 ceds6sc %<>% gsub("'(\\w+)'\\s(\\w+)'",  "'\\1 \\2'", ., perl = T, ignore.case = T)
 ceds6sc %<>% gsub(", ''(\\w+)(\\s\\w+)', ",  ", '\\1\\2', ", ., perl = T, ignore.case = T)
 ceds6sc %<>% gsub(", ''(\\w+)', ",  ", '\\1', ", ., perl = T, ignore.case = T)
-ceds6sc %<>% gsub("'(\\w+)'(\\w+\\s\\w+)'",  "'\\1\\2', ", ., perl = T, ignore.case = T)
+ceds6sc %<>% gsub("'(\\w+)'(\\w+\\s\\w+)'",  "'\\1\\2'", ., perl = T, ignore.case = T)
 
 
 # pomodoro is buzzing - it is long past time to have this script loaded

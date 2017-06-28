@@ -4772,7 +4772,7 @@ INSERT INTO ceds6sc_rdx.Ref_ISO6393_Language( Ref_ISO6393_Language_Id, Descripti
 INSERT INTO ceds6sc_rdx.Ref_ISO6393_Language( Ref_ISO6393_Language_Id, Description, Code, Definition, Ref_Jurisdiction_Id, Sort_Order ) VALUES ( 736, 'Kuwaa', 'blh', null, null, 73.60 ); 
 INSERT INTO ceds6sc_rdx.Ref_ISO6393_Language( Ref_ISO6393_Language_Id, Description, Code, Definition, Ref_Jurisdiction_Id, Sort_Order ) VALUES ( 737, 'Bolia', 'bli', null, null, 73.70 ); 
 INSERT INTO ceds6sc_rdx.Ref_ISO6393_Language( Ref_ISO6393_Language_Id, Description, Code, Definition, Ref_Jurisdiction_Id, Sort_Order ) VALUES ( 738, 'Bolongan', 'blj', null, null, 73.80 ); 
-INSERT INTO ceds6sc_rdx.Ref_ISO6393_Language( Ref_ISO6393_Language_Id, Description, Code, Definition, Ref_Jurisdiction_Id, Sort_Order ) VALUES ( 739, 'Pao Karen', , 'blk', null, null, 73.90 ); 
+INSERT INTO ceds6sc_rdx.Ref_ISO6393_Language( Ref_ISO6393_Language_Id, Description, Code, Definition, Ref_Jurisdiction_Id, Sort_Order ) VALUES ( 739, 'Pao Karen', 'blk', null, null, 73.90 ); 
 INSERT INTO ceds6sc_rdx.Ref_ISO6393_Language( Ref_ISO6393_Language_Id, Description, Code, Definition, Ref_Jurisdiction_Id, Sort_Order ) VALUES ( 740, 'Beli (Sudan)', 'blm', null, null, 74.00 ); 
 INSERT INTO ceds6sc_rdx.Ref_ISO6393_Language( Ref_ISO6393_Language_Id, Description, Code, Definition, Ref_Jurisdiction_Id, Sort_Order ) VALUES ( 741, 'Southern Catanduanes Bikol', 'bln', null, null, 74.10 ); 
 INSERT INTO ceds6sc_rdx.Ref_ISO6393_Language( Ref_ISO6393_Language_Id, Description, Code, Definition, Ref_Jurisdiction_Id, Sort_Order ) VALUES ( 742, 'Anii', 'blo', null, null, 74.20 ); 
@@ -5323,9 +5323,9 @@ INSERT INTO ceds6sc_rdx.Ref_ISO6393_Language( Ref_ISO6393_Language_Id, Descripti
 INSERT INTO ceds6sc_rdx.Ref_ISO6393_Language( Ref_ISO6393_Language_Id, Description, Code, Definition, Ref_Jurisdiction_Id, Sort_Order ) VALUES ( 1287, 'Moose Cree', 'crm', null, null, 128.70 ); 
 INSERT INTO ceds6sc_rdx.Ref_ISO6393_Language( Ref_ISO6393_Language_Id, Description, Code, Definition, Ref_Jurisdiction_Id, Sort_Order ) VALUES ( 1288, 'El Nayar Cora', 'crn', null, null, 128.80 ); 
 INSERT INTO ceds6sc_rdx.Ref_ISO6393_Language( Ref_ISO6393_Language_Id, Description, Code, Definition, Ref_Jurisdiction_Id, Sort_Order ) VALUES ( 1289, 'Crow', 'cro', null, null, 128.90 ); 
-INSERT INTO ceds6sc_rdx.Ref_ISO6393_Language( Ref_ISO6393_Language_Id, Description, Code, Definition, Ref_Jurisdiction_Id, Sort_Order ) VALUES ( 1290, 'Iyowujwa Chorote', , 'crq', null, null, 129.00 ); 
+INSERT INTO ceds6sc_rdx.Ref_ISO6393_Language( Ref_ISO6393_Language_Id, Description, Code, Definition, Ref_Jurisdiction_Id, Sort_Order ) VALUES ( 1290, 'Iyowujwa Chorote', 'crq', null, null, 129.00 ); 
 INSERT INTO ceds6sc_rdx.Ref_ISO6393_Language( Ref_ISO6393_Language_Id, Description, Code, Definition, Ref_Jurisdiction_Id, Sort_Order ) VALUES ( 1291, 'Seselwa Creole French', 'crs', null, null, 129.10 ); 
-INSERT INTO ceds6sc_rdx.Ref_ISO6393_Language( Ref_ISO6393_Language_Id, Description, Code, Definition, Ref_Jurisdiction_Id, Sort_Order ) VALUES ( 1292, 'Iyojwaja Chorote', , 'crt', null, null, 129.20 ); 
+INSERT INTO ceds6sc_rdx.Ref_ISO6393_Language( Ref_ISO6393_Language_Id, Description, Code, Definition, Ref_Jurisdiction_Id, Sort_Order ) VALUES ( 1292, 'Iyojwaja Chorote', 'crt', null, null, 129.20 ); 
 INSERT INTO ceds6sc_rdx.Ref_ISO6393_Language( Ref_ISO6393_Language_Id, Description, Code, Definition, Ref_Jurisdiction_Id, Sort_Order ) VALUES ( 1293, 'Chaura', 'crv', null, null, 129.30 ); 
 INSERT INTO ceds6sc_rdx.Ref_ISO6393_Language( Ref_ISO6393_Language_Id, Description, Code, Definition, Ref_Jurisdiction_Id, Sort_Order ) VALUES ( 1294, 'Chrau', 'crw', null, null, 129.40 ); 
 INSERT INTO ceds6sc_rdx.Ref_ISO6393_Language( Ref_ISO6393_Language_Id, Description, Code, Definition, Ref_Jurisdiction_Id, Sort_Order ) VALUES ( 1295, 'Carrier', 'crx', null, null, 129.50 ); 
@@ -7033,7 +7033,7 @@ INSERT INTO ceds6sc_rdx.Ref_ISO6393_Language( Ref_ISO6393_Language_Id, Descripti
 INSERT INTO ceds6sc_rdx.Ref_ISO6393_Language( Ref_ISO6393_Language_Id, Description, Code, Definition, Ref_Jurisdiction_Id, Sort_Order ) VALUES ( 2997, 'Krim', 'krm', null, null, 299.70 ); 
 INSERT INTO ceds6sc_rdx.Ref_ISO6393_Language( Ref_ISO6393_Language_Id, Description, Code, Definition, Ref_Jurisdiction_Id, Sort_Order ) VALUES ( 2998, 'Sapo', 'krn', null, null, 299.80 ); 
 INSERT INTO ceds6sc_rdx.Ref_ISO6393_Language( Ref_ISO6393_Language_Id, Description, Code, Definition, Ref_Jurisdiction_Id, Sort_Order ) VALUES ( 2999, 'Korop', 'krp', null, null, 299.90 ); 
-INSERT INTO ceds6sc_rdx.Ref_ISO6393_Language( Ref_ISO6393_Language_Id, Description, Code, Definition, Ref_Jurisdiction_Id, Sort_Order ) VALUES ( 3000, 'Krung 2', , 'krr', null, null, 300.00 ); 
+INSERT INTO ceds6sc_rdx.Ref_ISO6393_Language( Ref_ISO6393_Language_Id, Description, Code, Definition, Ref_Jurisdiction_Id, Sort_Order ) VALUES ( 3000, 'Krung 2', 'krr', null, null, 300.00 ); 
 INSERT INTO ceds6sc_rdx.Ref_ISO6393_Language( Ref_ISO6393_Language_Id, Description, Code, Definition, Ref_Jurisdiction_Id, Sort_Order ) VALUES ( 3001, 'Gbaya (Sudan)', 'krs', null, null, 300.10 ); 
 INSERT INTO ceds6sc_rdx.Ref_ISO6393_Language( Ref_ISO6393_Language_Id, Description, Code, Definition, Ref_Jurisdiction_Id, Sort_Order ) VALUES ( 3002, 'Tumari Kanuri', 'krt', null, null, 300.20 ); 
 INSERT INTO ceds6sc_rdx.Ref_ISO6393_Language( Ref_ISO6393_Language_Id, Description, Code, Definition, Ref_Jurisdiction_Id, Sort_Order ) VALUES ( 3003, 'Kurukh', 'kru', null, null, 300.30 ); 
@@ -7064,7 +7064,7 @@ INSERT INTO ceds6sc_rdx.Ref_ISO6393_Language( Ref_ISO6393_Language_Id, Descripti
 INSERT INTO ceds6sc_rdx.Ref_ISO6393_Language( Ref_ISO6393_Language_Id, Description, Code, Definition, Ref_Jurisdiction_Id, Sort_Order ) VALUES ( 3028, 'Winy?', 'kst', null, null, 302.80 ); 
 INSERT INTO ceds6sc_rdx.Ref_ISO6393_Language( Ref_ISO6393_Language_Id, Description, Code, Definition, Ref_Jurisdiction_Id, Sort_Order ) VALUES ( 3029, 'Khamyang', 'ksu', null, null, 302.90 ); 
 INSERT INTO ceds6sc_rdx.Ref_ISO6393_Language( Ref_ISO6393_Language_Id, Description, Code, Definition, Ref_Jurisdiction_Id, Sort_Order ) VALUES ( 3030, 'Kusu', 'ksv', null, null, 303.00 ); 
-INSERT INTO ceds6sc_rdx.Ref_ISO6393_Language( Ref_ISO6393_Language_Id, Description, Code, Definition, Ref_Jurisdiction_Id, Sort_Order ) VALUES ( 3031, 'Sgaw Karen', , 'ksw', null, null, 303.10 ); 
+INSERT INTO ceds6sc_rdx.Ref_ISO6393_Language( Ref_ISO6393_Language_Id, Description, Code, Definition, Ref_Jurisdiction_Id, Sort_Order ) VALUES ( 3031, 'Sgaw Karen', 'ksw', null, null, 303.10 ); 
 INSERT INTO ceds6sc_rdx.Ref_ISO6393_Language( Ref_ISO6393_Language_Id, Description, Code, Definition, Ref_Jurisdiction_Id, Sort_Order ) VALUES ( 3032, 'Kedang', 'ksx', null, null, 303.20 ); 
 INSERT INTO ceds6sc_rdx.Ref_ISO6393_Language( Ref_ISO6393_Language_Id, Description, Code, Definition, Ref_Jurisdiction_Id, Sort_Order ) VALUES ( 3033, 'Kharia Thar', 'ksy', null, null, 303.30 ); 
 INSERT INTO ceds6sc_rdx.Ref_ISO6393_Language( Ref_ISO6393_Language_Id, Description, Code, Definition, Ref_Jurisdiction_Id, Sort_Order ) VALUES ( 3034, 'Kodaku', 'ksz', null, null, 303.40 ); 
@@ -7217,7 +7217,7 @@ INSERT INTO ceds6sc_rdx.Ref_ISO6393_Language( Ref_ISO6393_Language_Id, Descripti
 INSERT INTO ceds6sc_rdx.Ref_ISO6393_Language( Ref_ISO6393_Language_Id, Description, Code, Definition, Ref_Jurisdiction_Id, Sort_Order ) VALUES ( 3181, 'Bondoukou Kulango', 'kzc', null, null, 318.10 ); 
 INSERT INTO ceds6sc_rdx.Ref_ISO6393_Language( Ref_ISO6393_Language_Id, Description, Code, Definition, Ref_Jurisdiction_Id, Sort_Order ) VALUES ( 3182, 'Kadai', 'kzd', null, null, 318.20 ); 
 INSERT INTO ceds6sc_rdx.Ref_ISO6393_Language( Ref_ISO6393_Language_Id, Description, Code, Definition, Ref_Jurisdiction_Id, Sort_Order ) VALUES ( 3183, 'Kosena', 'kze', null, null, 318.30 ); 
-INSERT INTO ceds6sc_rdx.Ref_ISO6393_Language( Ref_ISO6393_Language_Id, Description, Code, Definition, Ref_Jurisdiction_Id, Sort_Order ) VALUES ( 3184, 'Daa Kaili', , 'kzf', null, null, 318.40 ); 
+INSERT INTO ceds6sc_rdx.Ref_ISO6393_Language( Ref_ISO6393_Language_Id, Description, Code, Definition, Ref_Jurisdiction_Id, Sort_Order ) VALUES ( 3184, 'Daa Kaili', 'kzf', null, null, 318.40 ); 
 INSERT INTO ceds6sc_rdx.Ref_ISO6393_Language( Ref_ISO6393_Language_Id, Description, Code, Definition, Ref_Jurisdiction_Id, Sort_Order ) VALUES ( 3185, 'Kikai', 'kzg', null, null, 318.50 ); 
 INSERT INTO ceds6sc_rdx.Ref_ISO6393_Language( Ref_ISO6393_Language_Id, Description, Code, Definition, Ref_Jurisdiction_Id, Sort_Order ) VALUES ( 3186, 'Kelabit', 'kzi', null, null, 318.60 ); 
 INSERT INTO ceds6sc_rdx.Ref_ISO6393_Language( Ref_ISO6393_Language_Id, Description, Code, Definition, Ref_Jurisdiction_Id, Sort_Order ) VALUES ( 3187, 'Kayeli', 'kzl', null, null, 318.70 ); 
