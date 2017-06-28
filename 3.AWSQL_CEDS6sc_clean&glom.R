@@ -11,7 +11,7 @@ library(tidyverse)
 library(magrittr)
 
 ###### 1. Load AWSQL & Slice Up Script into DbSchema executable size blocks ######
-origscript_path <- "aw2sql_ceds6sc_snake_case_redux/aw2sql_ceds6sc_redux_complete.sql"
+origscript_path <- "aw2sql_ceds6sc_snake_case_redux2/aw2sql_ceds6sc_redux2_complete.sql"
 # Load full script
 cu_ceds6_awsql_sc_orig <- read_lines(origscript_path)
 
@@ -76,8 +76,8 @@ ceds6sc %<>% gsub("(?<=\\w )'snap'(?= \\w)",  "''snap''", ., perl = T, ignore.ca
 
 ###### 3. Write Out the Sliced Files ### ###
 # find the directory to read to
-clippable_fileroot <- "aw2sql_ceds6sc_snake_case_redux/"
-complete_translation <- "ceds6sc_aws_redux.sql"
+clippable_fileroot <- "aw2sql_ceds6sc_snake_case_redux2/"
+complete_translation <- "ceds6sc_aws_redux2.sql"
 completetranslation_filepath <- paste0(clippable_fileroot, complete_translation)
 # the whole script
 write_lines(ceds6sc, completetranslation_filepath)
@@ -88,15 +88,15 @@ clippable_filepath <- completetranslation_filepath
 
 # use the above file to read blocks out of and then write them out into the world
 block_1 <- read_lines(clippable_filepath, n_max = 9950)
-write_lines(block_1, paste0(clippable_fileroot, "awsql_ceds6sc_create_update_pt1.sql"))
+write_lines(block_1, paste0(clippable_fileroot, "awsql_ceds6sc_create_update_redux2_pt1.sql"))
 
 block_2 <- read_lines(clippable_filepath, skip = 9950, n_max = 9966)
-write_lines(block_2, paste0(clippable_fileroot, "awsql_ceds6sc_create_update_pt2.sql"))
+write_lines(block_2, paste0(clippable_fileroot, "awsql_ceds6sc_create_update_redux2_pt2.sql"))
 
 block_3 <- read_lines(clippable_filepath, skip = 19916, n_max = 9968)
-write_lines(block_3, paste0(clippable_fileroot, "awsql_ceds6sc_create_update_pt3.sql"))
+write_lines(block_3, paste0(clippable_fileroot, "awsql_ceds6sc_create_update_redux2_pt3.sql"))
 
 block_4 <- read_lines(clippable_filepath, skip = 29885, n_max = 10000)
-write_lines(block_4, paste0(clippable_fileroot, "awsql_ceds6sc_create_update_pt4.sql"))
+write_lines(block_4, paste0(clippable_fileroot, "awsql_ceds6sc_create_update_redux2_pt4.sql"))
  
 # utils::file.edit('awsql_ceds6_snake_case/awsql_ceds6sc_create_update_pt1.sql', editor = "/Program Files/Sublime Text 3/sublime_text.exe")
