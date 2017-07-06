@@ -20941,7 +20941,7 @@
 			</fk>
 		</table>
 	</schema>
-	<connector name="SqlServer_CEDS6.4" database="SqlServer" driver_class="com.microsoft.sqlserver.jdbc.SQLServerDriver" driver_jar="sqljdbc42.jar" driver_desc="Native Driver" host="localhost" port="1433" instance="CEDS-TSQL-V6" user="CEDS" passwd="cGFzc3dvcmQx" />
+	<connector name="SqlServer_CEDS6.4" database="SqlServer" driver_class="com.microsoft.sqlserver.jdbc.SQLServerDriver" driver_jar="sqljdbc42.jar" driver_desc="Native Driver" host="localhost" port="1433" instance="CEDS-TSQL-v6camelCase" user="CEDS" passwd="cGFzc3dvcmQx" />
 	<layout name="Default Layout" id="Layout_1801103" joined_routing="y" show_relation="columns" >
 		<entity schema="dbo" name="Achievement" color="bfd4f5" x="7305" y="3060" />
 		<entity schema="dbo" name="AchievementEvidence" color="bfd4f5" x="7305" y="3495" />
@@ -21358,7 +21358,6 @@
 		<entity schema="dbo" name="RefEarlyChildhoodCredential" color="f5ddbf" x="9525" y="5685" />
 		<entity schema="dbo" name="RefEarlyChildhoodProgramEnrollmentType" color="c8f5bf" x="10740" y="4425" />
 		<entity schema="dbo" name="RefEarlyChildhoodServices" color="bfd4f5" x="4530" y="7605" />
-		<entity schema="dbo" name="RefEducationLevel" color="c8f5bf" x="5160" y="5070" />
 		<entity schema="dbo" name="RefEducationLevelType" color="c8f5bf" x="1500" y="5865" />
 		<entity schema="dbo" name="RefEducationVerificationMethod" color="bfbff5" x="780" y="2850" />
 		<entity schema="dbo" name="RefElementaryMiddleAdditional" color="bfd4f5" x="1695" y="4875" />
@@ -21670,6 +21669,8 @@
 		<entity schema="dbo" name="AssessmentSession" color="c8f5bf" x="5925" y="3705" />
 		<entity schema="dbo" name="RefLearningResourceBookFormatType" color="f5ddbf" x="1680" y="915" />
 		<entity schema="dbo" name="RefISO6393Language" color="d2bff5" x="1995" y="675" />
+		<entity schema="dbo" name="RefEducationLevel" color="c8f5bf" x="5160" y="5070" />
+		<script name="RefOrganizationType PopulationPatch.sql" id="Query_595f2f" language="SQL" file="file:/C:/Users/Koyot/Documents/GitHub/aws_ceds_v6/TSQL_camelCase/RefOrganizationType%20PopulationPatch.sql" />
 	</layout>
 	<layout name="Sample Layout with Groups" id="Layout_29dbf64" joined_routing="y" show_relation="columns" >
 		<entity schema="dbo" name="Achievement" color="bfd4f5" x="7305" y="3090" />

@@ -1,0 +1,20 @@
+PRINT N'Populate RefOrganizationType table';
+IF EXISTS(SELECT * FROM dbo.sysobjects WHERE id = object_id(N'[dbo].[RefOrganizationType]') and OBJECTPROPERTY(id, N'IsUserTable') = 1)
+BEGIN
+INSERT INTO dbo.[RefOrganizationType]([Code], [Description], [Definition], [SortOrder], [RefOrganizationElementTypeId])
+VALUES ('LEA', 'Local Education Agency', 'Local Education Agency is specified as the type of institution responsible for providing adult education instructional services.', 1.00, 1)
+INSERT INTO dbo.[RefOrganizationType]([Code], [Description], [Definition], [SortOrder], [RefOrganizationElementTypeId])
+VALUES ('PostsecondaryInstitution', 'Postsecondary Institution', 'Postsecondary Institution is specified as the type of institution responsible for providing adult education instructional services.', 2.00, 1)
+INSERT INTO dbo.[RefOrganizationType]([Code], [Description], [Definition], [SortOrder], [RefOrganizationElementTypeId])
+VALUES ('CommunityBasedOrganization', 'Community-Based Organization', 'Community-Based Organization is specified as the type of institution responsible for providing adult education instructional services.', 3.00, 1)
+INSERT INTO dbo.[RefOrganizationType]([Code], [Description], [Definition], [SortOrder], [RefOrganizationElementTypeId])
+VALUES ('Library', 'Library', 'Library is specified as the type of institution responsible for providing adult education instructional services.', 4.00, 1)
+INSERT INTO dbo.[RefOrganizationType]([Code], [Description], [Definition], [SortOrder], [RefOrganizationElementTypeId])
+VALUES ('CorrectionalInstitution', 'Correctional Institution', 'Correctional Institution is specified as the type of institution responsible for providing adult education instructional services.', 5.00, 1)
+INSERT INTO dbo.[RefOrganizationType]([Code], [Description], [Definition], [SortOrder], [RefOrganizationElementTypeId])
+VALUES ('OtherInstitution', 'Other Institution', 'Other Institution is specified as the type of institution responsible for providing adult education instructional services.', 6.00, 1)
+INSERT INTO dbo.[RefOrganizationType]([Code], [Description], [Definition], [SortOrder], [RefOrganizationElementTypeId])
+VALUES ('OtherAgency', 'Other state or local government agency', 'Other state or local government agency is specified as the type of institution responsible for providing adult education instructional services.', 7.00, 1)
+INSERT INTO dbo.[RefOrganizationType]([Code], [Description], [Definition], [SortOrder], [RefOrganizationElementTypeId])
+VALUES ('Other', 'Other', 'Other is specified as the type of institution responsible for providing adult education instructional services.', 8.00, 1)
+END;

@@ -20941,7 +20941,7 @@
 			</fk>
 		</table>
 	</schema>
-	<connector name="SqlServer_CEDS6.4" database="SqlServer" driver_class="com.microsoft.sqlserver.jdbc.SQLServerDriver" driver_jar="sqljdbc42.jar" driver_desc="Native Driver" host="localhost" port="1433" instance="CEDS-TSQL-V6" user="CEDS" passwd="cGFzc3dvcmQx" />
+	<connector name="SqlServer_CEDS6.4" database="SqlServer" driver_class="com.microsoft.sqlserver.jdbc.SQLServerDriver" driver_jar="sqljdbc42.jar" driver_desc="Native Driver" host="localhost" port="1433" instance="CEDS-TSQL-v6camelCase" user="CEDS" passwd="cGFzc3dvcmQx" />
 	<layout name="Default Layout" id="Layout_1801103" joined_routing="y" show_relation="columns" >
 		<entity schema="dbo" name="Achievement" color="bfd4f5" x="7305" y="3060" />
 		<entity schema="dbo" name="AchievementEvidence" color="bfd4f5" x="7305" y="3495" />
@@ -21670,6 +21670,31 @@
 		<entity schema="dbo" name="AssessmentSession" color="c8f5bf" x="5925" y="3705" />
 		<entity schema="dbo" name="RefLearningResourceBookFormatType" color="f5ddbf" x="1680" y="915" />
 		<entity schema="dbo" name="RefISO6393Language" color="d2bff5" x="1995" y="675" />
+		<script name="Sql" id="Query_595f2f" language="SQL" >
+			<string><![CDATA[PRINT N'Populate RefOrganizationType table';
+IF EXISTS(SELECT * FROM dbo.sysobjects WHERE id = object_id(N'[dbo].[RefOrganizationType]') and OBJECTPROPERTY(id, N'IsUserTable') = 1)
+BEGIN
+INSERT INTO dbo.[RefOrganizationType]([Code], [Description], [Definition], [SortOrder], [RefOrganizationElementTypeId])
+VALUES ('LEA', 'Local Education Agency', 'Local Education Agency is specified as the type of institution responsible for providing adult education instructional services.', 1.00, 1)
+INSERT INTO dbo.[RefOrganizationType]([Code], [Description], [Definition], [SortOrder], [RefOrganizationElementTypeId])
+VALUES ('PostsecondaryInstitution', 'Postsecondary Institution', 'Postsecondary Institution is specified as the type of institution responsible for providing adult education instructional services.', 2.00, 1)
+INSERT INTO dbo.[RefOrganizationType]([Code], [Description], [Definition], [SortOrder], [RefOrganizationElementTypeId])
+VALUES ('CommunityBasedOrganization', 'Community-Based Organization', 'Community-Based Organization is specified as the type of institution responsible for providing adult education instructional services.', 3.00, 1)
+INSERT INTO dbo.[RefOrganizationType]([Code], [Description], [Definition], [SortOrder], [RefOrganizationElementTypeId])
+VALUES ('Library', 'Library', 'Library is specified as the type of institution responsible for providing adult education instructional services.', 4.00, 1)
+INSERT INTO dbo.[RefOrganizationType]([Code], [Description], [Definition], [SortOrder], [RefOrganizationElementTypeId])
+VALUES ('CorrectionalInstitution', 'Correctional Institution', 'Correctional Institution is specified as the type of institution responsible for providing adult education instructional services.', 5.00, 1)
+INSERT INTO dbo.[RefOrganizationType]([Code], [Description], [Definition], [SortOrder], [RefOrganizationElementTypeId])
+VALUES ('OtherInstitution', 'Other Institution', 'Other Institution is specified as the type of institution responsible for providing adult education instructional services.', 6.00, 1)
+INSERT INTO dbo.[RefOrganizationType]([Code], [Description], [Definition], [SortOrder], [RefOrganizationElementTypeId])
+VALUES ('OtherAgency', 'Other state or local government agency', 'Other state or local government agency is specified as the type of institution responsible for providing adult education instructional services.', 7.00, 1)
+INSERT INTO dbo.[RefOrganizationType]([Code], [Description], [Definition], [SortOrder], [RefOrganizationElementTypeId])
+VALUES ('Other', 'Other', 'Other is specified as the type of institution responsible for providing adult education instructional services.', 8.00, 1)
+END;]]></string>
+		</script>
+		<browser id="Browse_2196aa1" name="RefOrganizationType" confirm_updates="y" >
+			<browse_table schema="dbo" entity="RefOrganizationType" x="10" y="10" width="455" height="350" />
+		</browser>
 	</layout>
 	<layout name="Sample Layout with Groups" id="Layout_29dbf64" joined_routing="y" show_relation="columns" >
 		<entity schema="dbo" name="Achievement" color="bfd4f5" x="7305" y="3090" />
